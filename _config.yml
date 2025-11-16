@@ -1,0 +1,7 @@
+title: Braintree Support
+description:  Support and Documentation for Compliance Document Tracker
+theme: jekyll-theme-cayman
+# theme: jekyll-theme-midnight
+github:
+  is_project_page: false
+logo: /images/logo.png
