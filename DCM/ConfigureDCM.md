@@ -16,7 +16,7 @@ Search for Braintree.
 Select 'Braintree Trade Assistant'.
 Click on Install App:
 
-![alt text](\Common\InstallApp.png)
+![alt text](Common/InstallApp.png)
 
 After the app has installed, the setup page will open. The first thing you need to do is request a licence key.
 
@@ -24,19 +24,19 @@ After the app has installed, the setup page will open. The first thing you need 
 From the Trade Assistant Setup page.
 From the menu bar, select 'Register App':
 
-![alt text](RegisterApp.png)
+![alt text](Common/RegisterApp.png)
 
 From the list of apps, select 'BCP-TRADEASSIST-DCM', then select 'Request Subscription / Trial licence' from the menu bar:
 
-![alt text](RequestSubscription.png)
+![alt text](Common/RequestSubscription.png)
 
 An email will be sent to the Braintree service desk. Once the request has been registered, a support consultant will send you a registration key. On the subscription request page, click on 'Update Licence Key':
 
-![alt text](/Common/InstallApp.png)
+![alt text](Common/UpdateLicence.png)
 
 Enter the key provided in the input box, and click OK.
 
-![alt text](/Common/EnterLicenceKey.png)
+![alt text](Common/EnterLicenceKey.png)
 
 ## Number Series
 
@@ -52,7 +52,7 @@ Add at least one setup definition:
 - If using Custom ageing, enter a date formula to define the length of the periods eg 30D
 - Enter appropriate column headings for each ageing bucket.
 
- ![alt text](AgeingSetups.png)
+ ![alt text](AgeingSetup.png)
 
 ## Dispute Reasons
 From the Trade Assistant Setup, click on Deduction Codes in the menu.
