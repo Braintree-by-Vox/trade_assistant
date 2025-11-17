@@ -88,91 +88,76 @@ Definition of fields on transactions
 
 As entries are loaded from the system and the statement, the recon function will attempt to match them automatically, using the External document number from the system to match against the vendor's document number.
 
-### Reconcile transactions
-	Definition of fields on transactions
-
-Field Name	Source
-Document date	When loaded from Vendor ledger – the document date on the vendor ledger entry
-When loaded from statement – the document date on the import sheet, or the date manually captured by the user.
-Document Type	Loaded from the vendor ledger entry OR from the statement import.
-Document No.	From Vendor Ledger entry – non-editable.
-External document no.	When loaded from vendor ledger – the external document on the ledger entry
-When loaded from statement – the document number on the import sheet, or the document number 
-Due Date	Loaded from vendor ledger entry;
-Editable if transaction is not in ledger
-Ledger Amount	Total of original transaction from vendor ledger entry – not editable
-Remaining amount	Unpaid portion of transaction from vendor ledger entry – not editable
-Statement amount	Transaction amount reflected on supplier’s statement – editable
-Match status	Unmatched – default value
-
-Matched – selected when statement amount and ledger amount agree. Option cannot be selected if the statement and ledger don’t agree.
-
-Partial / on hold – selected when entry is in ledger and on statement but remaining amount and statement amount do not agree.
-
-Carry forward – selected when the entry is on the vendor statement but missing from ledger.
-
-Previously paid – selected when entry is on the statement but remaining balance in ledger is zero
-
-Rejected – manual selection, to indicate that payment will be withheld.
-Amount to Match	Reflects the lower of Statement amount and Remaining amount on ledger; not editable.
-Amount to Pay	Initially set to amount to match; can be overridden.
-Comments	Manual entry of notes
-
-
 As entries are loaded from the system and the statement, the recon function will attempt to match them automatically, using the External document number from the system to match against the vendor’s document number.
 
 If a match can be made on the document number, the transaction values from the system and the statement will be loaded on a single line alongside each other.  If the amounts from both sources match, the system will:
-o	Tick the ‘Matched’ column 
-o	Set the Matched status to ‘Matched’
-o	Set Amount to Match and Amount to Pay to the ledger amount.
-
+- Tick the ‘Matched’ column 
+- Set the Matched status to ‘Matched’
+- Set Amount to Match and Amount to Pay to the ledger amount.
  
+![alt text](MatchingAmounts.png)
 
 If the amounts don’t match, the lesser of Statement Amount and Ledger amount will be recorded into Amount to Match and Amount to Pay.
 
-
-1.4.5	Capture deductions
+### Capture deductions
 If deductions or Withholding tax are applicable, these are captured as follows:
-•	Select the ‘Payment’ menu and click on ‘Calculate Deductions’.
-•	If default deduction codes have been configured for the vendor, they will be automatically created for each invoice / credit note on the recon.  If set up with a percentage, this will be automatically captured.
-•	You can edit or add the deductions created per document. Select the line you want to update the deductions, and select Deductions from the subpage Matching menu.
+- Select the ‘Payment’ menu and click on ‘Calculate Deductions’.
+- If default deduction codes have been configured for the vendor, they will be automatically created for each invoice / credit note on the recon.  If set up with a percentage, this will be automatically captured.
+- You can edit or add the deductions created per document. Select the line you want to update the deductions, and select Deductions from the subpage Matching menu.
 
- 
+![alt text](SelectDeductions.png)
 
-1.4.6	Calculate the payment
+- Calculate the payment
 After entries have been matched, and deductions calculated, you can calculate the payment entries for the recon.  Before doing so, check that a journal batch template and journal batch have been selected on the recon header.
 
- 
+![alt text](SelectJournal.png)
 
 Click ‘Calculate Payment Amount’ on the Payment menu.  
 
 Payment entries will be displayed in the Payment grid at the bottom of the screen. The default bank account is assigned from the batch that is set on the header. If deductions have been taken on any of the invoices, an entry per GL account will also be displayed in the payment grid:
 
- 
+ ![alt text](PaymentEntries.png)
 
 If necessary, you can amend the payment allocation to use a different bank account, or split the payment between multiple bank accounts.
 
-1.4.7	Approve the reconciliation
+### Approve the reconciliation
 After completing the payment calculations, the reconciliation 
 
-1.4.8	Approve and post the reconciliation
+### Approve and post the reconciliation
 After completing the matching process and calculating the payment, the reconciliation can be posted.  
 
 There are two options for this:
-•	Generate and post the payment, which will settle the matched invoices on the vendor account, and process an entry against the bank account
-•	Archive the document without posting a payment.
+- Generate and post the payment, which will settle the matched invoices on the vendor account, and process an entry against the bank account
+- Archive the document without posting a payment.
 
 Before posting, it is necessary to approve the document. From the payment menu, click on ‘Request Approval’. This will trigger an approval request to the person responsible for approvals.  
 
 After the approver has approved the document, click on ‘Post Reconciliation’:
 
- 
+ ![alt text](PostRecon.png)
 
 From the popup, select the option you want.
 
- 
+![alt text](CreatePayment.png) 
 
-•	Click on ‘Archive’, then OK, to close the reconciliation without posting it.  This will change the status of the document to ‘Archived’, and it will no longer be editable.
-•	Click on ‘Create Payment’ to generate a payment journal for the reconciliation. This will add the entries in the payment grid to the journal specified in the document header. The payment journal will be opened after the entries have been generated. 
-•	If you exit the batch without posting, the entries will remain there, and further recons will be added to the batch on posting.  
-•	If you post the journal, the invoices linked to the payment will be closed, and the creditor’s balance will be debited. The reconciliation status will be changed to ‘Archived’.
+- Click on ‘Archive’, then OK, to close the reconciliation without posting it.  This will change the status of the document to ‘Archived’, and it will no longer be editable.
+- Click on ‘Create Payment’ to generate a payment journal for the reconciliation. This will add the entries in the payment grid to the journal specified in the document header. The payment journal will be opened after the entries have been generated. 
+- If you exit the batch without posting, the entries will remain there, and further recons will be added to the batch on posting.  
+- If you post the journal, the invoices linked to the payment will be closed, and the creditor’s balance will be debited. The reconciliation status will be changed to ‘Archived’.
+
+### Print or email documents
+After processing your reconciliation, there are three documents that can be printed.
+- Recon Statement -  provides a reconciliation between the balance owed according to the vendor’s ledger and the statement presented by the vendor.
+- Remittance advice – provides details of invoices being settled.
+- Payment authorisation – similar to the recon, providing details of differences between the supplier’s statement and the vendor ledger in a tabular format.
+
+From the Reconciliation page, select the ‘Print documents’ menu, and select the document you wish to print.
+
+### Review archived reconciliations
+On the vendor reconciliation list page:
+- Select the ‘Archived’ option in the filter panel
+
+![alt text](ArchivedRecons.png)
+
+- Click on the recon number to open the reconciliation.
+
