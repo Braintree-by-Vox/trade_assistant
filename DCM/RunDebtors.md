@@ -1,13 +1,16 @@
 # Debtors Collection Dashboard
 Search for 'Debtors Collection', and select the page.
 It's a good idea to bookmark the page.
-
 The dashboard will open.
+
+- [Installing from Appsource](#select-dashboard-options)
+- [Capture Notes](#capture-notes-on-the-customer)
+- [Collection Notes](#collection-notes)
+- [AgeAnalysis](#print-age-analysis)
 
 ## Select Dashboard Options
 
 ![alt text](SelectDashboardOptions.png)
-
 - Select an ageing type from the dropdown.
 - Aged as at: enter the date at which you wish age outstanding invoices.
 
