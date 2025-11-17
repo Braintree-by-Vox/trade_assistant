@@ -12,17 +12,18 @@ If you do not see the Views list, open the Filter panel for the page.
 From the list page, click on New to open the recon page
 
 ![alt text](VendorReconCard.png)
-•	Tab off the No. field. A document number will be assigned. Date fields and batch fields will be initialised.
-•	Select the vendor. The vendor name, currency and statement number will be assigned
+
+- Tab off the No. field. A document number will be assigned. Date fields and batch fields will be initialised.
+- Select the vendor. The vendor name, currency and statement number will be assigned
 
 ## Load transactions
 The transactions to be matched come from two sources:
-•	Internal – entries recorded against the vendor’s account via normal procurement processes.
-•	External – entries presented by the vendor as due for payment. 
+- Internal – entries recorded against the vendor’s account via normal procurement processes.
+- External – entries presented by the vendor as due for payment. 
 
 There are multiple methods to load entries due for payment:
-•	Internal entries will typically be loaded by importing them from the system. Transactions that have been previously settled will be inserted into the reconciliation.
-•	External entries can be captured manually, or imported from a spreadsheet template.
+- Internal entries will typically be loaded by importing them from the system. Transactions that have been previously settled will be inserted into the reconciliation.
+- External entries can be captured manually, or imported from a spreadsheet template.
 
 ### Load Internal Transactions
 Click on ‘Suggest Lines’ from the Statements menu:
@@ -31,44 +32,63 @@ Click on ‘Suggest Lines’ from the Statements menu:
 
 This will create an entry for each transaction on the vendor’s account which is due on or before the statement date, and which has not been previously settled. The following fields will be populated:
 
-o	Document date
-o	Document type
-o	Document no. (internal document number)
-o	External document number.
-o	Due date
-o	Ledger amount in original and local currency.
-o	Remaining amount in original and local currency.
-
-### Import External Transactions
-
-### Load Vendor Statement manually
-- Update the recon header.
--- If necessary, amend the statement date to reflect the date on the vendor’s document.
--- Capture the total of the vendor’s statement in the field ‘Closing balance per statement’.
--- Capture the transactions listed in the vendor statement.
--- If the recon contains a line loaded from the system, locate the entry and capture the value of the transaction as per the statement, into the field ‘Statement Amount’. Alternatively, tick the field ‘Match’ – the ledger amount will be automatically inserted into the Statement amount.
-- Transactions that are on the vendor statement, but are not recorded in the system, can be loaded by capturing the following details:
 - Document date
 - Document type
-- External document number
+- Document no. (internal document number)
+- External document number.
 - Due date
-- Statement amount.
+- Ledger amount in original and local currency.
+- Remaining amount in original and local currency.
 
-1.4.3	Option 2: load from Excel
-•	Create an Excel template:
-o	From the Statement menu on the reconciliation, click on ‘Import / Export’.
-o	Select ‘Export Template’.
- 
+### Option 1: Load Vendor Statement manually
+- Update the recon header.
+    - If necessary, amend the statement date to reflect the date on the vendor’s document.
+    - Capture the total of the vendor’s statement in the field ‘Closing balance per statement’.
+- Capture the transactions listed in the vendor statement.
+    - If the recon contains a line loaded from the system, locate the entry and capture the value of the transaction as per the statement, into the field ‘Statement Amount’. Alternatively, tick the field ‘Match’ – the ledger amount will be automatically inserted into the Statement amount.
+    - Transactions that are on the vendor statement, but are not recorded in the system, can be loaded by capturing the following details:
+      - Document date
+      - Document type
+      - External document number
+      - Due date
+      - Statement amount.
 
-o	Open the Excel file that has been downloaded.
-o	Capture the entries from the vendor’s statement onto the sheet, or request your vendor to supply their statement via this document.
-•	Import the Excel sheet:
-o	Click on Import/Export again.
-o	Select the option ‘Import Statement’.
-o	Navigate to the saved Excel file and select it.
-o	The system will load the entries from the sheet into the recon lines. If it is able to find the document using the external document number, it will load the statement amount into the existing line.  If not, it will create a new line with the statement amount.
+### Option 2: load from Excel
+- Create an Excel template:
+  - From the Statement menu on the reconciliation, click on ‘Import / Export’.
+  - Select ‘Export Template’.
 
-1.4.4	Reconcile transactions
+![alt text](ExportTemplate.png)
+
+  - Open the Excel file that has been downloaded.
+  - Capture the entries from the vendor’s statement onto the sheet, or request your vendor to supply their statement via this document.
+- Import the Excel sheet:
+  - Click on Import/Export again.
+  - Select the option ‘Import Statement’.
+  - Navigate to the saved Excel file and select it.
+  - The system will load the entries from the sheet into the recon lines. If it is able to find the document using the external document number, it will load the statement amount into the existing line.  If not, it will create a new line with the statement amount.
+
+### Reconcile transactions
+Definition of fields on transactions
+
+| Field Name | Source |
+|------------|--------|
+| Document date | When loaded from Vendor ledger – the document date on the vendor ledger entry<br>When loaded from statement – the document date on the import sheet, or the date manually captured by the user. |
+| Document Type | Loaded from the vendor ledger entry OR from the statement import. |
+| Document No. | From Vendor Ledger entry – non-editable. |
+| External document no. | When loaded from vendor ledger – the external document on the ledger entry<br>When loaded from statement – the document number on the import sheet, or the document number |
+| Due Date | Loaded from vendor ledger entry;<br>Editable if transaction is not in ledger |
+| Ledger Amount | Total of original transaction from vendor ledger entry – not editable |
+| Remaining amount | Unpaid portion of transaction from vendor ledger entry – not editable |
+| Statement amount | Transaction amount reflected on supplier's statement – editable |
+| Match status | **Unmatched** – default value<br><br>**Matched** – selected when statement amount and ledger amount agree. Option cannot be selected if the statement and ledger don't agree.<br><br>**Partial / on hold** – selected when entry is in ledger and on statement but remaining amount and statement amount do not agree.<br><br>**Carry forward** – selected when the entry is on the vendor statement but missing from ledger.<br><br>**Previously paid** – selected when entry is on the statement but remaining balance in ledger is zero<br><br>**Rejected** – manual selection, to indicate that payment will be withheld. |
+| Amount to Match | Reflects the lower of Statement amount and Remaining amount on ledger; not editable. |
+| Amount to Pay | Initially set to amount to match; can be overridden. |
+| Comments | Manual entry of notes |
+
+As entries are loaded from the system and the statement, the recon function will attempt to match them automatically, using the External document number from the system to match against the vendor's document number.
+
+### Reconcile transactions
 	Definition of fields on transactions
 
 Field Name	Source
