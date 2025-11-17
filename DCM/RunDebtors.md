@@ -55,7 +55,6 @@ Click on ‘Load Documents’.
 The list of open invoices will be loaded.  You may need to refresh the page to see them.
 
 ![alt text](CustomerDashWithTransactions.png) 
-
 Against each document, you can record information about the status of the document:
 
 - Dispute: tick on this column to indicate that the customer is disputing the invoice.
@@ -66,3 +65,8 @@ Against each document, you can record information about the status of the docume
  ![alt text](TransactionNotes.png)
 The comments will be printed on the custom age analysis.
 
+## Print Age Analysis
+From the Collection Dashboard, click on 'Age Analysis':
+
+![alt text](SelectAgeAnalysis.png)
+Choose filters as required, and click on Download. The system will create an ageing report into Excel.
