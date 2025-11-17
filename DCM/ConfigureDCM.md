@@ -4,7 +4,8 @@
 - [Installing from Appsource](#installing-from-appsource)
 - [How to request a licence registration key](#how-to-request-a-licence-registration-key)
 - [Number Series](#number-series)
-- [Deduction Codes](#deduction-codes)
+- [Ageing Setups](#ageing-setups)
+- [Deduction Codes](#dispute-reasons)
 - [Updating Customer]()
 
 ## Installing from Appsource
@@ -31,17 +32,32 @@ From the list of apps, select 'BCP-TRADEASSIST-DCM', then select 'Request Subscr
 
 An email will be sent to the Braintree service desk. Once the request has been registered, a support consultant will send you a registration key. On the subscription request page, click on 'Update Licence Key':
 
-![alt text](Common/InstallApp.png)
+![alt text](/Common/InstallApp.png)
 
 Enter the key provided in the input box, and click OK.
 
-![alt text](Common/EnterLicenceKey.png)
+![alt text](/Common/EnterLicenceKey.png)
 
 ## Number Series
 
 On installation, the system will create a new number series and insert it in the setup table. You can edit this if required.
 
-## Deduction Codes
+## Ageing Setups
+Ageing Setup: used to define default settings and column headings on the collection dashboard.
+Select Ageing Setup from the menu.
+Add at least one setup definition:
+- Code: enter a code to identify the setup.
+- Ageing Type: select Accounting Period, Custom, or Calendar month
+- Ageing By: select Document Date, Posting Date, or Document Date
+- If using Custom ageing, enter a date formula to define the length of the periods eg 30D
+- Enter appropriate column headings for each ageing bucket.
 
+ ![alt text](AgeingSetups.png)
+
+## Dispute Reasons
+From the Trade Assistant Setup, click on Deduction Codes in the menu.
+The Reason Codes page will be displayed.
+Add new codes as required.
+Tick the field ‘Dispute Reason’ for those codes that will be applicable to Debtors collection.
 
 ## Updating Customers
