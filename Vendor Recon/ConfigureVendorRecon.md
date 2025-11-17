@@ -1,7 +1,8 @@
 # Configure Vendor Reconciliation
 
 ## Geting Started
-How to request a licence registration key
+- Installing from Appsource
+- How to request a licence registration key
 
 ## Number Series
 

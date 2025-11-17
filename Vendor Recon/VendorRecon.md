@@ -9,7 +9,7 @@ After matching the transactions against the business’s own records, the admini
 * Print a reconciliation between the balance stated by the creditor and the balance as per the business’s creditors ledger.
 
 ## Configuration
-[How to configure the Vendor Reconciliation module](ConfigureVendorRecon.md)
+[Getting started with the Vendor Reconciliation module](ConfigureVendorRecon.md)
 
 ## Operation
 [Create a new vendor recon](RunVendorRecon.md)
