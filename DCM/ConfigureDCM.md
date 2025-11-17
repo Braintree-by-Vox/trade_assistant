@@ -31,16 +31,17 @@ From the list of apps, select 'BCP-TRADEASSIST-DCM', then select 'Request Subscr
 
 An email will be sent to the Braintree service desk. Once the request has been registered, a support consultant will send you a registration key. On the subscription request page, click on 'Update Licence Key':
 
-![alt text](Common\UpdateLicence.png)
+![alt text](Common/InstallApp.png)
 
 Enter the key provided in the input box, and click OK.
 
-![alt text](Common\EnterLicenceKey.png)
+![alt text](Common/EnterLicenceKey.png)
 
 ## Number Series
 
 On installation, the system will create a new number series and insert it in the setup table. You can edit this if required.
 
 ## Deduction Codes
+
 
 ## Updating Customers
