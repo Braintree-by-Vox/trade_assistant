@@ -1,12 +1,16 @@
 # Debtors Collection Dashboard
-Search for 'Debtors Collection', and select the page.
-It's a good idea to bookmark the page.
-The dashboard will open.
 
+## Content
+- [Open Dashboard](#open-dashboard)
 - [Installing from Appsource](#select-dashboard-options)
 - [Capture Notes](#capture-notes-on-the-customer)
 - [Collection Notes](#collection-notes)
 - [AgeAnalysis](#print-age-analysis)
+
+## Open Dashboard
+Search for 'Debtors Collection', and select the page.
+It's a good idea to bookmark the page.
+The dashboard will open.
 
 ## Select Dashboard Options
 

@@ -1,4 +1,12 @@
 # Run Vendor Reconciliation
+
+## Content
+- [Start a new recon](#start-a-new-vendor-recon)
+- [Load transactions](#load-transactions)
+- [Reconcile Transactions](#reconcile-transactions)
+- [Capture Deductions](#capture-deductions)
+- [Calculate payments](#calculate-the-payment)
+  
 Search for 'Vendor Recon', and select the page. 
 It's a good idea to bookmark this page.
 
