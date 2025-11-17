@@ -12,5 +12,5 @@ After matching the transactions against the business’s own records, the admini
 [Getting started with the Vendor Reconciliation module](ConfigureVendorRecon.md)
 
 ## Operation
-[Create a new vendor recon](RunVendorRecon.md)
+[How to run a Vendor Reconciliation](RunVendorRecon.md)
 
