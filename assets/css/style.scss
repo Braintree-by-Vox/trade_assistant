@@ -47,3 +47,81 @@ body {
 //   border-radius: 8px;         // Optional rounded corners
 //   box-shadow: 0 2px 4px rgba(0,0,0,0.1);  // Optional shadow
 // }
+
+// Two-column layout with sidebar
+.page-wrapper {
+  display: flex;
+  max-width: 80rem;
+  margin: 0 auto;
+  gap: 2rem;
+  
+  @media screen and (max-width: 64em) {
+    flex-direction: column;
+  }
+}
+
+.main-content {
+  flex: 1;
+  min-width: 0; // Prevent flex item from overflowing
+}
+
+// Sidebar styles
+.sidebar {
+  width: 280px;
+  flex-shrink: 0;
+  
+  @media screen and (max-width: 64em) {
+    width: 100%;
+    margin-top: 2rem;
+  }
+  
+  .sidebar-content {
+    background-color: #ffffff;
+    border: 1px solid #d1d5da;
+    border-radius: 6px;
+    padding: 1.5rem;
+    position: sticky;
+    top: 2rem;
+    
+    @media screen and (max-width: 64em) {
+      position: static;
+    }
+    
+    h3 {
+      margin-top: 0;
+      margin-bottom: 1rem;
+      color: #159957;
+      font-size: 1.25rem;
+      font-weight: bold;
+      border-bottom: 2px solid #159957;
+      padding-bottom: 0.5rem;
+    }
+    
+    .contact-info {
+      p {
+        margin-bottom: 1.25rem;
+        font-size: 0.9rem;
+        line-height: 1.5;
+        
+        &:last-child {
+          margin-bottom: 0;
+        }
+        
+        strong {
+          color: #333;
+          display: block;
+          margin-bottom: 0.25rem;
+        }
+        
+        a {
+          color: #159957;
+          text-decoration: none;
+          
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
