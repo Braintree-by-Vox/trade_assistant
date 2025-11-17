@@ -37,5 +37,19 @@ On installation, the system will create a new number series and insert it in the
 ![alt text](NoSeries.png)
 
 ## Workflow setups
+The Trade Assistant model has two versions of workflow: a simple line management model, and a full workflow based on standard Business Central workflow templates.
 
 ## User Setups
+Users who will be running vendor reconciliations need some basic setups.
+From the Trade Assistant setup page, select the menu option: 'User Setups':
+![alt text](image.png)
+
+For each recon administrator, fill in the fields:
+
+| Column | Content|
+|----------|----------|
+| Vendor Recon Approver   | The name of the administrator's immediate supervisor   |
+| Default payment Jnl Template   | Select a payment journal batch template from the list   |
+| Default Payment Jnl Batch| Select a journal batch name from the list.|
+
+Note: it is a good idea to create separate payment batches for each administrator.
