@@ -2,7 +2,6 @@
 
 ## Content
 - [Open Dashboard](#open-dashboard)
-- [Installing from Appsource](#select-dashboard-options)
 - [Capture Notes](#capture-notes-on-the-customer)
 - [Collection Notes](#collection-notes)
 - [AgeAnalysis](#print-age-analysis)
@@ -33,10 +32,10 @@ You can capture information about the state of the customer's account, and who i
 Scroll to the right hand side of the customer list.
 Click on ‘Notes’:
 
- ![alt text](SelectNotes.png)
+![alt text](SelectNotes.png)
 In the dialog box, capture details of the person / people involved in resolving collection issues on the customer, and capture a summary note for the customer. This note applies to the customer as a whole, and will appear on the Age Analysis.
 
- ![alt text](AgeingNotes.png)
+![alt text](AgeingNotes.png)
 
 This note applies to the customer as a whole, and will appear on the Age Analysis.
 ![alt text](AgeingFactbox.png)
