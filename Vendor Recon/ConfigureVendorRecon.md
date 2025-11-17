@@ -4,7 +4,10 @@
 - [Installing from Appsource](#installing-from-appsource)
 - [How to request a licence registration key](#how-to-request-a-licence-registration-key)
 - [Number Series](#number-series)
-- [Setups](#setups)
+- [Workflow Setup](#workflow-setups)
+- [User Setups](#setups)
+- [Deduction Codes](#deduction-codes)
+- [Withholding Tax](#withholding-tax)
 
 ## Installing from Appsource
 Open your Microsoft Dynamics Business Central tenant.
@@ -38,11 +41,13 @@ On installation, the system will create a new number series and insert it in the
 
 ## Workflow setups
 The Trade Assistant model has two versions of workflow: a simple line management model, and a full workflow based on standard Business Central workflow templates.
+During installation, a vendor recon approval template will be created. 
+Use this to create a workflow based on standard Business Central workflow tools.
 
 ## User Setups
 Users who will be running vendor reconciliations need some basic setups.
 From the Trade Assistant setup page, select the menu option: 'User Setups':
-![alt text](image.png)
+![alt text](SelectUserSetup.png)
 
 For each recon administrator, fill in the fields:
 
@@ -53,3 +58,21 @@ For each recon administrator, fill in the fields:
 | Default Payment Jnl Batch| Select a journal batch name from the list.|
 
 Note: it is a good idea to create separate payment batches for each administrator.
+
+## Deduction Codes
+When processing vendor reconciliations, you have an option to make deductions from the invoices being settled (over and above payment discount, which is handled by standard business central functionality). To do this, you will need to configure deduction codes.
+From the Trade Setup page, select 'Deduction Codes' from the menu. The Return Reasons list will open.
+
+![alt text](openReasonCodes.png)
+
+For each account that you would like to use as a deduction, you need to enter
+- Account type (default G/L account)
+- Account No.: the number of the account to be debited with the deduction.
+- Calculation type: select Percent or Amount.
+- Deduction Percent: optional, if you want to apply a standard percent when the code is selected on a recon.
+
+## Withholding Tax
+- If you will be processing withholding tax for creditors:
+- Set the Withholding Tax switch to ON.
+- Select a Withholding Tax provision account type
+- Select a withholding tax provision account number

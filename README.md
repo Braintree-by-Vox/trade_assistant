@@ -6,7 +6,9 @@ Modules
 [How to set up and run the Vendor Reconciliation module](Vendor Recon/VendorRecon.md)
 
 ## Debtors Collection Management
+[How to set up and run the Debtors Collection module](DCM/DebtorsCollection.md)
 
 ## Forward Exchange Contracts
+[How to set up and run the Vendor Reconciliation module](FEC/FEC.md)
 
 ## Landed Cost (Coming soon!)
