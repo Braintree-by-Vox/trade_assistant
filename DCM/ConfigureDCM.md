@@ -16,7 +16,7 @@ Search for Braintree.
 Select 'Braintree Trade Assistant'.
 Click on Install App:
 
-![alt text](Common/InstallApp.png)
+![alt text](InstallApp.png)
 
 After the app has installed, the setup page will open. The first thing you need to do is request a licence key.
 
