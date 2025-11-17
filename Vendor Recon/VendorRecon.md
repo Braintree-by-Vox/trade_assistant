@@ -13,3 +13,4 @@ After matching the transactions against the business’s own records, the admini
 
 ## Operation
 [Create a new vendor recon](Vendor Recon/RunVendorRecon.md)
+
