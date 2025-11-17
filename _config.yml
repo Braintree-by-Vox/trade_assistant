@@ -1,7 +1,6 @@
 title: Braintree Support
-description:  Support and Documentation for Compliance Document Tracker
+description:  Support and Documentation for Trade Assistant Extension
 theme: jekyll-theme-cayman
-# theme: jekyll-theme-midnight
 github:
   is_project_page: false
 logo: /images/logo.png
