@@ -3,4 +3,4 @@ The Braintree Debtors Collection Management module assists businesses to gain co
 
 ## [Configuration](ConfigureDCM.md)
 
-## [Operation](RunDebtors.md)
+## [Debtors Collection Dashboard](RunDebtors.md)

@@ -24,19 +24,19 @@ After the app has installed, the setup page will open. The first thing you need 
 From the Trade Assistant Setup page.
 From the menu bar, select 'Register App':
 
-![alt text](Common/RegisterApp.png)
+![alt text](RegisterApp.png)
 
 From the list of apps, select 'BCP-TRADEASSIST-DCM', then select 'Request Subscription / Trial licence' from the menu bar:
 
-![alt text](Common/RequestSubscription.png)
+![alt text](RequestSubscription.png)
 
 An email will be sent to the Braintree service desk. Once the request has been registered, a support consultant will send you a registration key. On the subscription request page, click on 'Update Licence Key':
 
-![alt text](Common/UpdateLicence.png)
+![alt text](UpdateLicence.png)
 
 Enter the key provided in the input box, and click OK.
 
-![alt text](Common/EnterLicenceKey.png)
+![alt text](EnterLicenceKey.png)
 
 ## Number Series
 
@@ -61,3 +61,10 @@ Add new codes as required.
 Tick the field ‘Dispute Reason’ for those codes that will be applicable to Debtors collection.
 
 ## Updating Customers
+For each customer, set up the collections administrator for the account.
+Open the customer card.
+Go to the Invoicing tab.
+In the section labelled ‘Trade Assistant’. 
+In the field ‘Collections Administrator’, select a user name.
+
+![alt text](CustomerCard.png)

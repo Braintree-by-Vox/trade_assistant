@@ -68,7 +68,7 @@ This will create an entry for each transaction on the vendor’s account which i
   - Navigate to the saved Excel file and select it.
   - The system will load the entries from the sheet into the recon lines. If it is able to find the document using the external document number, it will load the statement amount into the existing line.  If not, it will create a new line with the statement amount.
 
-### Reconcile transactions
+## Reconcile transactions
 Definition of fields on transactions
 
 | Field Name | Source |
@@ -99,7 +99,7 @@ If a match can be made on the document number, the transaction values from the s
 
 If the amounts don’t match, the lesser of Statement Amount and Ledger amount will be recorded into Amount to Match and Amount to Pay.
 
-### Capture deductions
+## Capture deductions
 If deductions or Withholding tax are applicable, these are captured as follows:
 - Select the ‘Payment’ menu and click on ‘Calculate Deductions’.
 - If default deduction codes have been configured for the vendor, they will be automatically created for each invoice / credit note on the recon.  If set up with a percentage, this will be automatically captured.
@@ -107,7 +107,7 @@ If deductions or Withholding tax are applicable, these are captured as follows:
 
 ![alt text](SelectDeductions.png)
 
-- Calculate the payment
+## Calculate the payment
 After entries have been matched, and deductions calculated, you can calculate the payment entries for the recon.  Before doing so, check that a journal batch template and journal batch have been selected on the recon header.
 
 ![alt text](SelectJournal.png)
@@ -120,32 +120,30 @@ Payment entries will be displayed in the Payment grid at the bottom of the scree
 
 If necessary, you can amend the payment allocation to use a different bank account, or split the payment between multiple bank accounts.
 
-### Approve the reconciliation
-After completing the payment calculations, the reconciliation 
+## Approve the reconciliation
+After completing the payment calculations, the reconciliation needs to be approved for payment. From the payment menu, click on 'Request Approval'
+Depending on the approval method being used, this will either trigger the standard approval workflow process, or wait for a supervisor to approve.
 
-### Approve and post the reconciliation
-After completing the matching process and calculating the payment, the reconciliation can be posted.  
+## Approve and post the reconciliation
+After the relevant users have approved the recon, it can be posted.  
+Click on 'Post Reconciliation'.
+
+ ![alt text](PostRecon.png)
 
 There are two options for this:
 - Generate and post the payment, which will settle the matched invoices on the vendor account, and process an entry against the bank account
 - Archive the document without posting a payment.
 
-Before posting, it is necessary to approve the document. From the payment menu, click on ‘Request Approval’. This will trigger an approval request to the person responsible for approvals.  
-
-After the approver has approved the document, click on ‘Post Reconciliation’:
-
- ![alt text](PostRecon.png)
-
 From the popup, select the option you want.
 
 ![alt text](CreatePayment.png) 
 
-- Click on ‘Archive’, then OK, to close the reconciliation without posting it.  This will change the status of the document to ‘Archived’, and it will no longer be editable.
-- Click on ‘Create Payment’ to generate a payment journal for the reconciliation. This will add the entries in the payment grid to the journal specified in the document header. The payment journal will be opened after the entries have been generated. 
+- To close the reconciliation without posting the payment, click on ‘Archive’, then OK. This will change the status of the document to ‘Archived’, and it will no longer be editable.
+- To generate a payment journal for the reconciliation, click on ‘Create Payment’. This will add the entries in the payment grid to the journal specified in the document header. The payment journal will be opened after the entries have been generated. 
 - If you exit the batch without posting, the entries will remain there, and further recons will be added to the batch on posting.  
 - If you post the journal, the invoices linked to the payment will be closed, and the creditor’s balance will be debited. The reconciliation status will be changed to ‘Archived’.
 
-### Print or email documents
+## Print or email documents
 After processing your reconciliation, there are three documents that can be printed.
 - Recon Statement -  provides a reconciliation between the balance owed according to the vendor’s ledger and the statement presented by the vendor.
 - Remittance advice – provides details of invoices being settled.
@@ -153,11 +151,10 @@ After processing your reconciliation, there are three documents that can be prin
 
 From the Reconciliation page, select the ‘Print documents’ menu, and select the document you wish to print.
 
-### Review archived reconciliations
+## Review archived reconciliations
 On the vendor reconciliation list page:
 - Select the ‘Archived’ option in the filter panel
 
 ![alt text](ArchivedRecons.png)
 
 - Click on the recon number to open the reconciliation.
-
