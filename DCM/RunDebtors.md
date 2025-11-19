@@ -76,3 +76,6 @@ From the Collection Dashboard, click on 'Age Analysis':
 
 ![alt text](SelectAgeAnalysis.png)
 Choose filters as required, and click on Download. The system will create an ageing report into Excel.
+
+
+[**⬆️ Back to Top**](#content) &nbsp;&nbsp;&nbsp;&nbsp; [**🏠 Home**](/trade-assistant)
