@@ -5,7 +5,6 @@
 - [Load transactions](#load-transactions)
 - [Reconcile Transactions](#reconcile-transactions)
 - [Capture Deductions](#capture-deductions)
-- 
 - [Calculate payments](#calculate-the-payment)
   
 Search for 'Vendor Recon', and select the page. 
