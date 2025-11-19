@@ -118,11 +118,25 @@ If deductions or Withholding tax are applicable, these are captured as follows:
 
 ## Handling Settlement Discounts
 Business Central has the ability to manage settlement discounts when paying vendors. To enable this, the following conditions must be in place:
-- Settlement discount must be configured on payment terms. (You can learn about this here: https://learn.microsoft.com/en-us/dynamics365/business-central/finance-payment-terms)
-- The invoice(s) being settled must contain a date in the field Payment Discount Date, and a value in Remaining Discount.
+- Settlement discount must be configured on payment terms. (You can learn about this here: [Payment Terms in Business Central](https://learn.microsoft.com/en-us/dynamics365/business-central/finance-payment-terms))
+- The invoice(s) being settled must contain a date in the field 'Payment Discount Date', and a value in Remaining Discount.
 - The Payment date for your reconciliation must be on or before the Payment Discount Date.
 
+<details>
+<summary>Manually overriding settlement discounts</summary>
+
+You can update the settlement date and value on the vendor ledger entries. This should be done BEFORE you 'suggest lines' on the reconciliation.
+- Navigate to the vendor ledger entries page.
+- Find the transaction you would like to modify.
+- Click on 'Edit List' in the action bar.
+- Update the Pmt Discount Date and Remaining Pmt. Disc. Possible as required.
+
+![alt text](DiscountOnVLE.png)
+
+</details>
+
 When you run 'Suggest Lines', the transactions will be loaded. If settlement discount is applicable for an invoice, it will appear in the column 'Discount Available'.
+
 
 ![alt text](DiscountAvailable.png)
 
