@@ -9,6 +9,8 @@
 
 // Custom header height overrides
 .page-header {
+  position: sticky;
+  top: 0;
   max-height: 200px;      // Maximum header height
   overflow: hidden;       // Hide content that exceeds max-height
     
@@ -45,7 +47,6 @@
 
 // Change body background color
 body {
-  // background-color: lightcyan ;  // (change to your preferred color)
   background-color: $braintree-background;
 }
 
@@ -90,12 +91,12 @@ body {
   }
   
   .left-sidebar-content {
-    background-color: lightcyan;
+    background-color: $braintree-background;
     border-radius: 6px;
     border-right: 1px solid $braintree-border;
     padding: 1.5rem;
     position: sticky;
-    top: 2rem;
+    top: 210px;
     min-height: 800px;
     
     @media screen and (max-width: 64em) {
@@ -161,7 +162,7 @@ body {
     border-radius: 6px;
     padding: 1.5rem;
     position: sticky;
-    top: 2rem;
+    top: 200px;
     
     @media screen and (max-width: 64em) {
       position: static;
@@ -251,6 +252,22 @@ body {
       }
     }
   }
+
+  // Blockquote styling
+  blockquote {
+    padding: 0 1rem;
+    margin-left: 0;
+    color: $blockquote-text-color;
+    border-left: 0.3rem solid $border-color;
+    
+    > :first-child {
+      margin-top: 0;
+    }
+    
+    > :last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .braintree-button {
@@ -269,3 +286,175 @@ body {
     border-color: #003433;
   }
 }
+
+// // Search box styling
+// .search-container {
+//   position: relative;
+//   max-width: 300px;
+  
+//   @media screen and (max-width: 42em) {
+//     max-width: 100%;
+//     margin-top: 1rem;
+//   }
+// }
+
+// #search-input {
+//   width: 100%;
+//   padding: 0.5rem 1rem;
+//   border: 2px solid white;
+//   border-radius: 5px;
+//   background-color: rgba(255, 255, 255, 0.9);
+//   color: #333;
+//   font-size: 0.9rem;
+  
+//   &:focus {
+//     outline: none;
+//     background-color: white;
+//     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+//   }
+  
+//   &::placeholder {
+//     color: #666;
+//   }
+// }
+
+// #search-results {
+//   display: none;
+//   position: absolute;
+//   top: 100%;
+//   left: 0;
+//   right: 0;
+//   margin-top: 0.5rem;
+//   background: white;
+//   border: 1px solid #ddd;
+//   border-radius: 5px;
+//   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+//   max-height: 400px;
+//   overflow-y: auto;
+//   z-index: 1001;
+// }
+
+// .search-result-item {
+//   padding: 0.75rem 1rem;
+//   border-bottom: 1px solid #eee;
+  
+//   &:last-child {
+//     border-bottom: none;
+//   }
+  
+//   &:hover {
+//     background-color: #f5f5f5;
+//   }
+  
+//   a {
+//     text-decoration: none;
+//     color: #333;
+//     display: block;
+    
+//     strong {
+//       color: #328278;
+//       font-size: 1rem;
+//       display: block;
+//       margin-bottom: 0.25rem;
+//     }
+    
+//     p {
+//       margin: 0;
+//       font-size: 0.85rem;
+//       color: #666;
+//       line-height: 1.4;
+//     }
+//   }
+  
+//   mark {
+//     background-color: #ffeb3b;
+//     padding: 0 2px;
+//     border-radius: 2px;
+//   }
+// }
+
+// // Search box styling
+// .search-container {
+//   position: relative;
+//   max-width: 300px;
+  
+//   @media screen and (max-width: 42em) {
+//     max-width: 100%;
+//     margin-top: 1rem;
+//   }
+// }
+
+// #search-input {
+//   width: 100%;
+//   padding: 0.5rem 1rem;
+//   border: 2px solid white;
+//   border-radius: 5px;
+//   background-color: rgba(255, 255, 255, 0.9);
+//   color: #333;
+//   font-size: 0.9rem;
+  
+//   &:focus {
+//     outline: none;
+//     background-color: white;
+//     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+//   }
+  
+//   &::placeholder {
+//     color: #666;
+//   }
+// }
+
+// #search-results {
+//   display: none;
+//   position: absolute;
+//   top: 100%;
+//   left: 0;
+//   right: 0;
+//   margin-top: 0.5rem;
+//   background: white;
+//   border: 1px solid #ddd;
+//   border-radius: 5px;
+//   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+//   max-height: 400px;
+//   overflow-y: auto;
+//   z-index: 1001;
+// }
+
+// .search-result-item {
+//   padding: 0.75rem 1rem;
+//   border-bottom: 1px solid #eee;
+  
+//   &:last-child {
+//     border-bottom: none;
+//   }
+  
+//   &:hover {
+//     background-color: #f5f5f5;
+//   }
+  
+//   a {
+//     text-decoration: none;
+//     color: #333;
+//     display: block;
+    
+//     strong {
+//       color: #328278;
+//       font-size: 1rem;
+//       display: block;
+//       margin-bottom: 0.25rem;
+//     }
+    
+//     p {
+//       margin: 0;
+//       font-size: 0.85rem;
+//       color: #666;
+//       line-height: 1.4;
+//     }
+//   }
+  
+//   mark {
+//     background-color: #ffeb3b;
+//     padding: 0 2px;
+//     border-radius: 2px;
+//   }
+// }
