@@ -5,6 +5,7 @@
 - [Load transactions](#load-transactions)
 - [Reconcile Transactions](#reconcile-transactions)
 - [Capture Deductions](#capture-deductions)
+- 
 - [Calculate payments](#calculate-the-payment)
   
 Search for 'Vendor Recon', and select the page. 
@@ -114,6 +115,18 @@ If deductions or Withholding tax are applicable, these are captured as follows:
 - You can edit or add the deductions created per document. Select the line you want to update the deductions, and select Deductions from the subpage Matching menu.
 
 ![alt text](SelectDeductions.png)
+
+## Handling Settlement Discounts
+Business Central has the ability to manage settlement discounts when paying vendors. To enable this, the following conditions must be in place:
+- Settlement discount must be configured on payment terms. (You can learn about this here: https://learn.microsoft.com/en-us/dynamics365/business-central/finance-payment-terms)
+- The invoice(s) being settled must contain a date in the field Payment Discount Date, and a value in Remaining Discount.
+- The Payment date for your reconciliation must be on or before the Payment Discount Date.
+
+When you run 'Suggest Lines', the transactions will be loaded. If settlement discount is applicable for an invoice, it will appear in the column 'Discount Available'.
+
+![alt text](DiscountAvailable.png)
+
+When you create the payment journal for the reconciliation, standard Business Central functions will deduct the settlement discount from the amount transferred from the bank account.
 
 ## Calculate the payment
 After entries have been matched, and deductions calculated, you can calculate the payment entries for the recon.  Before doing so, check that a journal batch template and journal batch have been selected on the recon header.
