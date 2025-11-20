@@ -18,12 +18,10 @@
   @media screen and (min-width: 64em) {
     padding: 3rem 6rem;  // Default is 5rem 6rem
   }
-  
-  // Tablet
+    // Tablet
   @media screen and (min-width: 42em) and (max-width: 64em) {
     padding: 2rem 4rem;  // Default is 3rem 4rem
   }
-  
   // Mobile
   @media screen and (max-width: 42em) {
     padding: 1.5rem 1rem;  // Default is 2rem 1rem
@@ -298,6 +296,26 @@ body {
       
       &:hover {
         opacity: 0.8;
+      }
+    }
+  }
+}
+
+.test 
+{
+  font-size: 10px;
+  font-weight: bold;
+}
+
+// Markdown-style unordered list (starting with -)
+.main-content {
+  ul li {
+    > p {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+      
+      &:last-child {
+        margin-bottom: 0;
       }
     }
   }
