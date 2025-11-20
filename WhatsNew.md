@@ -6,9 +6,19 @@
 
 # Vendor Reconcliation
 
-<!-- <details>
-<summary><strong>Release 26.0.20251119.1</strong></summary> -->
+### Release 26.0.20251120.1 (26.4)
 
+<details>
+<summary>Allow selected users to override payment discounts from Vendor Recon page</summary>
+
+  - Trade assistant user setup: new field "Allow Discount Modify"
+  - If turned on, user can edit Discount Available on recon lines
+  - When discount is edited, user will be prompted to confirm.
+  - Discount amount will be transferred to vendor ledger entry
+  - Pmt Discount date on vendor ledger entry will be set to Recon payment date + 1 day
+
+</details>
+    
 ### Release 26.0.20251119.1
 - Manage settlement discount
   - Requirement: Handle settlement discounts on invoices being settled.
@@ -18,7 +28,6 @@
     - discount is provided for info only - will show on reports
     - discount will be applied to vendor payment when the payment journal is posted, using standard BC settlement discount function
 
-<!-- </details> -->
 
 # Debtors Collections
 
