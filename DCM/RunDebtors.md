@@ -33,11 +33,13 @@ Scroll to the right hand side of the customer list.
 Click on ‘Notes’:
 
 ![alt text](SelectNotes.png)
+
 In the dialog box, capture details of the person / people involved in resolving collection issues on the customer, and capture a summary note for the customer. This note applies to the customer as a whole, and will appear on the Age Analysis.
 
 ![alt text](AgeingNotes.png)
 
 This note applies to the customer as a whole, and will appear on the Age Analysis.
+
 ![alt text](AgeingFactbox.png)
 
 ## Collection notes
@@ -47,11 +49,13 @@ From the Collection Dashboard, select a customer.
 Click on the customer name, or click on the Customer Dashboard menu option:
 
 ![alt text](OpenCustomerDashboard.png) 
+
 The customer’s dashboard will appear. This lists all Collection notes produced for the customer, with the most recent at the top.
 
 Click on ‘Collection Note’ in the top menu bar:
 
 ![alt text](SelectCollectionNote.png) 
+
 A new collection note will be opened.
 
 ![alt text](CustomerDash.png)
@@ -61,6 +65,7 @@ Click on ‘Load Documents’.
 The list of open invoices will be loaded.  You may need to refresh the page to see them.
 
 ![alt text](CustomerDashWithTransactions.png) 
+
 Against each document, you can record information about the status of the document:
 
 - Dispute: tick on this column to indicate that the customer is disputing the invoice.
@@ -69,13 +74,15 @@ Against each document, you can record information about the status of the docume
 - Transaction comment: you can enter additional information or feedback from the customer.
 
  ![alt text](TransactionNotes.png)
+
 The comments will be printed on the custom age analysis.
 
 ## Print Age Analysis
 From the Collection Dashboard, click on 'Age Analysis':
 
 ![alt text](SelectAgeAnalysis.png)
+
 Choose filters as required, and click on Download. The system will create an ageing report into Excel.
 
 
-[**⬆️ Back to Top**](#content) &nbsp;&nbsp;&nbsp;&nbsp; [**🏠 Home**](/trade-assistant)
+[**⬆️ Back to Top**](#content) &nbsp;&nbsp;&nbsp;&nbsp; [**🏠 Home**](/trade_assistant)

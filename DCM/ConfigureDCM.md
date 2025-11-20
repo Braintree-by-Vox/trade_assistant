@@ -2,7 +2,7 @@
 
 ## Geting Started
 - [Installing from Appsource](#installing-from-appsource)
-- [How to request a licence registration key](#how-to-request-a-licence-registration-key)
+- [How to request a license registration key](#how-to-request-a-licence-registration-key)
 - [Number Series](#number-series)
 - [Ageing Setups](#ageing-setups)
 - [Deduction Codes](#dispute-reasons)
@@ -18,19 +18,19 @@ Click on Install App:
 
 ![alt text](InstallApp.png)
 
-After the app has installed, the setup page will open. The first thing you need to do is request a licence key.
+After the app has installed, the setup page will open. The first thing you need to do is request a licencs key.
 
-## How to request a licence registration key
+## How to request a license registration key
 From the Trade Assistant Setup page.
 From the menu bar, select 'Register App':
 
 ![alt text](RegisterApp.png)
 
-From the list of apps, select 'BCP-TRADEASSIST-DCM', then select 'Request Subscription / Trial licence' from the menu bar:
+From the list of apps, select 'BCP-TRADEASSIST-DCM', then select 'Request Subscription / Trial license' from the menu bar:
 
 ![alt text](RequestSubscription.png)
 
-An email will be sent to the Braintree service desk. Once the request has been registered, a support consultant will send you a registration key. On the subscription request page, click on 'Update Licence Key':
+An email will be sent to the Braintree service desk. Once the request has been registered, a support consultant will send you a registration key. On the subscription request page, click on 'Update License Key':
 
 ![alt text](UpdateLicence.png)
 
@@ -50,7 +50,7 @@ Add at least one setup definition:
 - Ageing Type: select Accounting Period, Custom, or Calendar month
 - Ageing By: select Document Date, Posting Date, or Document Date
 - If using Custom ageing, enter a date formula to define the length of the periods eg 30D
-- Enter appropriate column headings for each ageing bucket.
+- Enter appropriate column headings for each ageing bucket. For example, enter '30D' or '30 Days'. This will be displayed as the column heading on the Debtors Collection Dashboard.
 
  ![alt text](AgeingSetup.png)
 
@@ -68,3 +68,5 @@ In the section labelled ‘Trade Assistant’.
 In the field ‘Collections Administrator’, select a user name.
 
 ![alt text](CustomerCard.png)
+
+[**⬆️ Back to Top**](#content) &nbsp;&nbsp;&nbsp;&nbsp; [**🏠 Home**](/trade_assistant)
