@@ -1,0 +1,218 @@
+---
+layout: default
+title: Teams Dial
+---
+
+<div class="teams-dial-container">
+  <h2>Quick Dial via Microsoft Teams</h2>
+  
+  <div class="dial-input-section">
+    <label for="phone-number">Enter Phone Number:</label>
+    <input type="tel" id="phone-number" placeholder="+1 234 567 8900" />
+    <button class="braintree-button" onclick="dialTeams()">Call via Teams</button>
+  </div>
+  
+  <div class="quick-dial-section">
+    <h3>Quick Dial Contacts</h3>
+    <div class="contact-list">
+      <div class="contact-item">
+        <span class="contact-name">Support Line</span>
+        <a href="tel:+27878051665" class="teams-dial-link" onclick="dialTeamsNumber('+27878051665'); return false;">
+          📞 +27 87 805 1665
+        </a>
+      </div>
+      <div class="contact-item">
+        <span class="contact-name">Sales Department</span>
+        <a href="tel:+27878051665" class="teams-dial-link" onclick="dialTeamsNumber('+27878051665'); return false;">
+          📞 +27 87 805 1665
+        </a>
+      </div>
+      <div class="contact-item">
+        <span class="contact-name">Main Office</span>
+        <a href="tel:+27878051665" class="teams-dial-link" onclick="dialTeamsNumber('+27878051665'); return false;">
+          📞 +27 87 805 1665
+        </a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="instructions">
+    <h3>How to Use</h3>
+    <ul>
+      <li>Click any phone number to initiate a call through Microsoft Teams</li>
+      <li>Or enter a phone number manually and click "Call via Teams"</li>
+      <li>Teams will open automatically and start the call</li>
+      <li>Make sure Microsoft Teams is installed on your device</li>
+    </ul>
+  </div>
+</div>
+
+<script>
+function dialTeams() {
+  const phoneNumber = document.getElementById('phone-number').value.trim();
+  
+  if (!phoneNumber) {
+    alert('Please enter a phone number');
+    return;
+  }
+  
+  dialTeamsNumber(phoneNumber);
+}
+
+function dialTeamsNumber(number) {
+  // Remove spaces and special characters except + and digits
+  const cleanNumber = number.replace(/[^\d+]/g, '');
+  
+  if (!cleanNumber) {
+    alert('Invalid phone number');
+    return;
+  }
+  
+  // Teams URL scheme for calling
+  const teamsUrl = `msteams:/l/call/0/0?users=4:${encodeURIComponent(cleanNumber)}`;
+  
+  // Try to open Teams
+  window.location.href = teamsUrl;
+  
+  // Show confirmation
+  setTimeout(() => {
+    const proceed = confirm('Teams should be opening. If Teams didn\'t open, make sure it\'s installed.\n\nClick OK to try the alternative method.');
+    if (proceed) {
+      // Alternative method using https protocol
+      const alternativeUrl = `https://teams.microsoft.com/l/call/0/0?users=4:${encodeURIComponent(cleanNumber)}`;
+      window.open(alternativeUrl, '_blank');
+    }
+  }, 1000);
+}
+
+// Allow Enter key to dial
+document.addEventListener('DOMContentLoaded', function() {
+  const phoneInput = document.getElementById('phone-number');
+  if (phoneInput) {
+    phoneInput.addEventListener('keypress', function(e) {
+      if (e.key === 'Enter') {
+        dialTeams();
+      }
+    });
+  }
+});
+</script>
+
+<style>
+.teams-dial-container {
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+.dial-input-section {
+  background-color: #f5f5f5;
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.dial-input-section label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #328278;
+}
+
+#phone-number {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  border: 2px solid #328278;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+}
+
+#phone-number:focus {
+  outline: none;
+  border-color: #003433;
+  box-shadow: 0 0 5px rgba(50, 130, 120, 0.3);
+}
+
+.quick-dial-section {
+  margin-bottom: 2rem;
+}
+
+.quick-dial-section h3 {
+  color: #328278;
+  margin-bottom: 1rem;
+}
+
+.contact-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.contact-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-item:hover {
+  background-color: #e8f5f3;
+}
+
+.contact-name {
+  font-weight: bold;
+  color: #333;
+}
+
+.teams-dial-link {
+  color: #328278;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border: 2px solid #328278;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.teams-dial-link:hover {
+  background-color: #328278;
+  color: white;
+}
+
+.instructions {
+  background-color: #e8f5f3;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #328278;
+}
+
+.instructions h3 {
+  color: #328278;
+  margin-top: 0;
+}
+
+.instructions ul {
+  margin-bottom: 0;
+}
+
+.instructions li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+@media screen and (max-width: 42em) {
+  .contact-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+  
+  .dial-input-section {
+    padding: 1rem;
+  }
+}
+</style>

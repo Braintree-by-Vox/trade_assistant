@@ -1,0 +1,354 @@
+---
+layout: default
+title: Teams Chat
+---
+
+<div class="teams-chat-container">
+  <h2>Start a Microsoft Teams Chat</h2>
+  
+  <div class="chat-input-section">
+    <label for="user-email">Enter User Email or UPN:</label>
+    <input type="email" id="user-email" placeholder="user@example.com" />
+    <button class="braintree-button" onclick="openTeamsChat()">Start Chat</button>
+  </div>
+  
+  <div class="chat-options-section">
+    <h3>Chat Options</h3>
+    
+    <div class="option-group">
+      <label for="chat-message">Pre-fill Message (Optional):</label>
+      <textarea id="chat-message" rows="3" placeholder="Type your message here..."></textarea>
+    </div>
+    
+    <div class="option-group">
+      <label>
+        <input type="checkbox" id="group-chat" />
+        Create Group Chat
+      </label>
+    </div>
+    
+    <div class="option-group" id="additional-users-section" style="display: none;">
+      <label for="additional-users">Additional Users (comma-separated emails):</label>
+      <input type="text" id="additional-users" placeholder="user2@example.com, user3@example.com" />
+    </div>
+  </div>
+  
+  <div class="quick-chat-section">
+    <h3>Quick Chat Contacts</h3>
+    <div class="contact-list">
+      <div class="contact-card">
+        <div class="contact-info">
+          <span class="contact-name">👤 Service Desk</span>
+          <span class="contact-email">adelee@braintree.co.za</span>
+        </div>
+        <button class="braintree-button small" onclick="startQuickChat('support@example.com')">
+          💬 Chat
+        </button>
+      </div>
+      
+      <div class="contact-card">
+        <div class="contact-info">
+          <span class="contact-name">👤 Sales</span>
+          <span class="contact-email">sales@braintree.co.za</span>
+        </div>
+        <button class="braintree-button small" onclick="startQuickChat('sales@braintree.co.za')">
+          💬 Chat
+        </button>
+      </div>
+      
+      <div class="contact-card">
+        <div class="contact-info">
+          <span class="contact-name">👤 Accounts</span>
+          <span class="contact-email">Accounts@braintree.co.za</span>
+        </div>
+        <button class="braintree-button small" onclick="startQuickChat('accounts@braintree.co.za')">
+          💬 Chat
+        </button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="instructions">
+    <h3>How to Use</h3>
+    <ul>
+      <li>Enter a user's email address or User Principal Name (UPN)</li>
+      <li>Optionally pre-fill a message to send</li>
+      <li>Check "Create Group Chat" to add multiple participants</li>
+      <li>Click "Start Chat" to open Microsoft Teams with the conversation</li>
+      <li>Or use Quick Chat buttons for pre-configured contacts</li>
+      <li>Teams must be installed on your device</li>
+    </ul>
+    
+    <h4>Supported Formats:</h4>
+    <ul>
+      <li><strong>One-on-One:</strong> user@example.com</li>
+      <li><strong>Group Chat:</strong> Multiple emails separated by commas</li>
+      <li><strong>Channel:</strong> Use the Teams app to navigate to channels</li>
+    </ul>
+  </div>
+</div>
+
+<script>
+function openTeamsChat() {
+  const userEmail = document.getElementById('user-email').value.trim();
+  const message = document.getElementById('chat-message').value.trim();
+  const isGroupChat = document.getElementById('group-chat').checked;
+  const additionalUsers = document.getElementById('additional-users').value.trim();
+  
+  if (!userEmail) {
+    alert('Please enter a user email address');
+    return;
+  }
+  
+  if (!isValidEmail(userEmail)) {
+    alert('Please enter a valid email address');
+    return;
+  }
+  
+  let users = [userEmail];
+  
+  if (isGroupChat && additionalUsers) {
+    const additionalEmails = additionalUsers.split(',').map(e => e.trim()).filter(e => e);
+    users = users.concat(additionalEmails);
+  }
+  
+  initiateTeamsChat(users, message);
+}
+
+function startQuickChat(email, prefilledMessage = '') {
+  initiateTeamsChat([email], prefilledMessage);
+}
+
+function initiateTeamsChat(users, message = '') {
+  // Build Teams deep link
+  let teamsUrl = 'https://teams.microsoft.com/l/chat/0/0?users=';
+  teamsUrl += users.join(',');
+  
+  if (message) {
+    teamsUrl += '&message=' + encodeURIComponent(message);
+  }
+  
+  // Try to open with msteams protocol first
+  const protocolUrl = teamsUrl.replace('https://teams.microsoft.com', 'msteams:');
+  
+  // Attempt to open Teams
+  window.location.href = protocolUrl;
+  
+  // Fallback to web version
+  setTimeout(() => {
+    const proceed = confirm('Teams should be opening. If Teams didn\'t open, click OK to try the web version.');
+    if (proceed) {
+      window.open(teamsUrl, '_blank');
+    }
+  }, 1000);
+}
+
+function isValidEmail(email) {
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailRegex.test(email);
+}
+
+// Toggle additional users field
+document.addEventListener('DOMContentLoaded', function() {
+  const groupChatCheckbox = document.getElementById('group-chat');
+  const additionalUsersSection = document.getElementById('additional-users-section');
+  const userEmailInput = document.getElementById('user-email');
+  
+  groupChatCheckbox.addEventListener('change', function() {
+    additionalUsersSection.style.display = this.checked ? 'block' : 'none';
+  });
+  
+  // Allow Enter key to start chat
+  userEmailInput.addEventListener('keypress', function(e) {
+    if (e.key === 'Enter') {
+      openTeamsChat();
+    }
+  });
+});
+</script>
+
+<style>
+.teams-chat-container {
+  max-width: 900px;
+  margin: 2rem auto;
+}
+
+.chat-input-section {
+  background-color: #f5f5f5;
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.chat-input-section label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #328278;
+}
+
+#user-email {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  border: 2px solid #328278;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+}
+
+#user-email:focus {
+  outline: none;
+  border-color: #003433;
+  box-shadow: 0 0 5px rgba(50, 130, 120, 0.3);
+}
+
+.chat-options-section {
+  background-color: #e8f5f3;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.chat-options-section h3 {
+  color: #328278;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.option-group {
+  margin-bottom: 1rem;
+}
+
+.option-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.option-group input[type="checkbox"] {
+  margin-right: 0.5rem;
+  width: auto;
+}
+
+#chat-message,
+#additional-users {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #328278;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+#chat-message:focus,
+#additional-users:focus {
+  outline: none;
+  border-color: #003433;
+  box-shadow: 0 0 5px rgba(50, 130, 120, 0.3);
+}
+
+.quick-chat-section {
+  margin-bottom: 2rem;
+}
+
+.quick-chat-section h3 {
+  color: #328278;
+  margin-bottom: 1rem;
+}
+
+.contact-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.contact-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+  border-color: #328278;
+  box-shadow: 0 2px 8px rgba(50, 130, 120, 0.2);
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.contact-name {
+  font-weight: bold;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.contact-email {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.braintree-button.small {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.instructions {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #328278;
+}
+
+.instructions h3,
+.instructions h4 {
+  color: #328278;
+  margin-top: 0;
+}
+
+.instructions h4 {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.instructions ul {
+  margin-bottom: 0.5rem;
+}
+
+.instructions li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+@media screen and (max-width: 42em) {
+  .contact-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .contact-info {
+    align-items: center;
+  }
+  
+  .chat-input-section,
+  .chat-options-section {
+    padding: 1rem;
+  }
+  
+  .braintree-button.small {
+    width: 100%;
+  }
+}
+</style>

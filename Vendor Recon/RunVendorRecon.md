@@ -4,6 +4,7 @@
 - [Start a new recon](#start-a-new-vendor-recon)
 - [Load transactions](#load-transactions)
 - [Reconcile Transactions](#reconcile-transactions)
+- [Handling Settlement Discounts](#handling-settlement-discounts)
 - [Capture Deductions](#capture-deductions)
 - [Calculate payments](#calculate-the-payment)
   
