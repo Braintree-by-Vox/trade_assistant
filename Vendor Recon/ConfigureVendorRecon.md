@@ -61,7 +61,7 @@ Note: it is a good idea to create separate payment batches for each administrato
 
 ## Deduction Codes
 When processing vendor reconciliations, you have an option to make deductions from the invoices being settled (over and above payment discount, which is handled by standard business central functionality). To do this, you will need to configure deduction codes.
-From the Trade Setup page, select 'Deduction Codes' from the menu. The Return Reasons list will open.
+From the Trade Assistant Setup page, select 'Deduction Codes' from the menu. The Return Reasons list will open.
 
 ![alt text](openReasonCodes.png)
 
@@ -72,7 +72,7 @@ For each account that you would like to use as a deduction, you need to enter
 - Deduction Percent: optional, if you want to apply a standard percent when the code is selected on a recon.
 
 ## Withholding Tax
-- If you will be processing withholding tax for creditors:
+If you will be processing withholding tax for creditors:
 - Set the Withholding Tax switch to ON.
 - Select a Withholding Tax provision account type
 - Select a withholding tax provision account number

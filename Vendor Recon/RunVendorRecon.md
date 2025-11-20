@@ -61,7 +61,7 @@ This will create an entry for each transaction on the vendor’s account which i
       - Due date
       - Statement amount.
 
-### Option 2: load from Excel
+### Option 2: Import from Excel
 - Create an Excel template:
   - From the Statement menu on the reconciliation, click on ‘Import / Export’.
   - Select ‘Export Template’.
@@ -139,7 +139,7 @@ When you run 'Suggest Lines', the transactions will be loaded. If settlement dis
 
 ![alt text](DiscountAvailable.png)
 
-When you create the payment journal for the reconciliation, standard Business Central functions will deduct the settlement discount from the amount transferred from the bank account.
+When you create the payment journal for the reconciliation, standard Business Central functions will deduct the settlement discount from the amount paid out of the bank account.
 
 ## Calculate the payment
 After entries have been matched, and deductions calculated, you can calculate the payment entries for the recon.  Before doing so, check that a journal batch template and journal batch have been selected on the recon header.
@@ -155,7 +155,8 @@ Payment entries will be displayed in the Payment grid at the bottom of the scree
 If necessary, you can amend the payment allocation to use a different bank account, or split the payment between multiple bank accounts.
 
 ## Approve the reconciliation
-After completing the payment calculations, the reconciliation needs to be approved for payment. From the payment menu, click on 'Request Approval'
+After completing the payment calculations, the reconciliation needs to be approved for payment. From the payment menu, click on 'Request Approval'.
+
 Depending on the approval method being used, this will either trigger the standard approval workflow process, or wait for a supervisor to approve.
 
 ## Approve and post the reconciliation
@@ -194,4 +195,4 @@ On the vendor reconciliation list page:
 - Click on the recon number to open the reconciliation.
 
 
-[**⬆️ Back to Top**](#content) &nbsp;&nbsp;&nbsp;&nbsp; [**🏠 Home**](/trade-assistant)
+[**⬆️ Back to Top**](#content) &nbsp;&nbsp;&nbsp;&nbsp; [**🏠 Home**](/trade_assistant)
