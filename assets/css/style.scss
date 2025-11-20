@@ -287,3 +287,18 @@ body {
     border-color: #003433;
   }
 }
+
+// Collapsible details/summary styling
+.main-content {
+  details {
+    summary {
+      color: $braintree-colour6;
+      cursor: pointer;
+      font-weight: bold;
+      
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}
