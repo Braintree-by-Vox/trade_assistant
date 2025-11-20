@@ -122,8 +122,7 @@ Business Central has the ability to manage settlement discounts when paying vend
 - The invoice(s) being settled must contain a date in the field 'Payment Discount Date', and a value in Remaining Discount.
 - The Payment date for your reconciliation must be on or before the Payment Discount Date.
 
-<details>
-<summary>Manually overriding settlement discounts</summary>
+### Manually overriding settlement discounts
 
 You can update the settlement date and value on the vendor ledger entries. This should be done BEFORE you 'suggest lines' on the reconciliation.
 - Navigate to the vendor ledger entries page.
@@ -132,8 +131,6 @@ You can update the settlement date and value on the vendor ledger entries. This 
 - Update the Pmt Discount Date and Remaining Pmt. Disc. Possible as required.
 
 ![alt text](DiscountOnVLE.png)
-
-</details>
 
 When you run 'Suggest Lines', the transactions will be loaded. If settlement discount is applicable for an invoice, it will appear in the column 'Discount Available'.
 
