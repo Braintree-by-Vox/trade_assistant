@@ -9,7 +9,7 @@
 ### Release 26.0.20251120.1 (26.4)
 
 <details>
-<summary>Allow selected users to override payment discounts from Vendor Recon page</summary>
+<summary>Allow selected users to override payment discounts from Vendor Recon page (click for details)</summary>
 <p>- Trade assistant user setup: new field "Allow Discount Modify" </p>
 <p>- If turned on, user can edit Discount Available on recon lines</p>
 <p>- When discount is edited, user will be prompted to confirm.</p>
