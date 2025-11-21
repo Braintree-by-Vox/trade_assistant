@@ -4,8 +4,8 @@
 - [Installing from Appsource](#installing-from-appsource)
 - [How to request a license registration key](#how-to-request-a-licence-registration-key)
 - [Number Series](#number-series)
+- [User Setups](#user-setups)
 - [Workflow Setup](#workflow-setups)
-- [User Setups](#setups)
 - [Deduction Codes](#deduction-codes)
 - [Withholding Tax](#withholding-tax)
 
