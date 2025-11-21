@@ -309,27 +309,18 @@ body {
 
 // Markdown-style unordered list (starting with -)
 .main-content {
-  ul {
-    list-style-type: disc;
-    padding-left: 2em;
-    margin-bottom: 1rem;
+  ul li {
+    > p {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+      
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
     
-    li {
-      display: list-item;
-      margin-bottom: 0.25rem;
-      
-      > p {
-        margin-top: 0;
-        margin-bottom: 0.5rem;
-        
-        &:last-child {
-          margin-bottom: 0;
-        }
-      }
-      
-      &::marker {
-        color: $braintree-font;
-      }
+    &::marker {
+      color: $braintree-font;
     }
   }
 }

@@ -10,11 +10,14 @@
 
 <details>
 <summary>Allow selected users to override payment discounts from Vendor Recon page (click for details)</summary>
-<p>- Trade assistant user setup: new field "Allow Discount Modify" </p>
-<p>- If turned on, user can edit Discount Available on recon lines</p>
-<p>- When discount is edited, user will be prompted to confirm.</p>
-<p>- Discount amount will be transferred to vendor ledger entry</p>
-<p>- Pmt Discount date on vendor ledger entry will be set to Recon payment date + 1 day</p>
+
+<ul>
+<li>Trade assistant user setup: new field "Allow Discount Modify"</li>
+<li>If turned on, user can edit Discount Available on recon lines</li>
+<li>When discount is edited, user will be prompted to confirm.</li>
+<li>Discount amount will be transferred to vendor ledger entry</li>
+<li>Pmt Discount date on vendor ledger entry will be set to Recon payment date + 1 day</li>
+</ul>
 
 </details>
     
