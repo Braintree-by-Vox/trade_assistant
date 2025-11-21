@@ -56,6 +56,7 @@ For each recon administrator, fill in the fields:
 | Vendor Recon Approver   | The name of the administrator's immediate supervisor   |
 | Default payment Jnl Template   | Select a payment journal batch template from the list   |
 | Default Payment Jnl Batch| Select a journal batch name from the list.|
+| Allow Discount Modify | Set to True to allow the user to modify Pmt discount on recon |
 
 Note: it is a good idea to create separate payment batches for each administrator.
 
