@@ -134,7 +134,6 @@ You can update the settlement date and value on the vendor ledger entries. This 
 
 When you run 'Suggest Lines', the transactions will be loaded. If settlement discount is applicable for an invoice, it will appear in the column 'Discount Available'.
 
-
 ![alt text](DiscountAvailable.png)
 
 When you create the payment journal for the reconciliation, standard Business Central functions will deduct the settlement discount from the amount paid out of the bank account.
