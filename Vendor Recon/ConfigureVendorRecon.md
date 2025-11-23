@@ -77,3 +77,6 @@ If you will be processing withholding tax for creditors:
 - Set the Withholding Tax switch to ON.
 - Select a Withholding Tax provision account type
 - Select a withholding tax provision account number
+
+
+[**⬆️ Back to Top**](#content) &nbsp;&nbsp;&nbsp;&nbsp; [**🏠 Home**](/trade_assistant)

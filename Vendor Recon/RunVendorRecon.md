@@ -189,7 +189,7 @@ On the vendor reconciliation list page:
 
 ![alt text](ArchivedRecons.png)
 
-- Click on the recon number to open the reconciliation.
+Click on the recon number to open the reconciliation.
 
 
 [**⬆️ Back to Top**](#content) &nbsp;&nbsp;&nbsp;&nbsp; [**🏠 Home**](/trade_assistant)
