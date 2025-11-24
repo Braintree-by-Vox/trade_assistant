@@ -339,10 +339,8 @@ body {
       color: $braintree-colour7;
       cursor: pointer;
       font-weight: bold;
-      margin-bottom: 0 !important;
       margin-top: 0 !important;
-      padding: 0.1rem 0 !important;
-      line-height: 1 !important;
+      line-height: 1.2 !important;
       
       &:hover {
         opacity: 0.6;
@@ -350,12 +348,12 @@ body {
     }    
     // Reduce spacing when collapsed
     &:not([open]) {
-      margin-bottom: 0 !important;
+      margin-bottom: 0.5rem !important;
     }
     
     // Spacing when expanded
     &[open] {
-      margin-bottom: 0.1rem !important;
+      margin-bottom: 0.5rem !important;
     }
   }
 }
