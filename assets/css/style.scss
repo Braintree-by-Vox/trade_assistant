@@ -347,7 +347,7 @@ body {
     
     // Reduce spacing when collapsed
     &:not([open]) {
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.1rem;
     }
   }
 }
