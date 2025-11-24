@@ -342,10 +342,10 @@ body {
       margin-bottom: 0 !important;
       margin-top: 0 !important;
       padding: 0.1rem 0 !important;
-      line-height: 1.2 !important;
+      line-height: 1 !important;
       
       &:hover {
-        opacity: 0.8;
+        opacity: 0.6;
       }
     }    
     // Reduce spacing when collapsed
@@ -355,7 +355,7 @@ body {
     
     // Spacing when expanded
     &[open] {
-      margin-bottom: 0.5rem !important;
+      margin-bottom: 0.1rem !important;
     }
   }
 }
