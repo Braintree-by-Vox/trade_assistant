@@ -9,13 +9,13 @@
 <details>
 <summary>1. Error message: Amount to pay does not equal matched amount" when clicking on 'Request Approval' (click for details)</summary>
 <ul>
-<li>2. Modified filter before calculating totals</li>
+<li>Modified filter before calculating totals</li>
 </ul>
 </details>
 <br>
-
+<!-- next issue -->
 <details>
-<summary>3. The Remittance Advice also does not show the actual net payment correctly when discount is taken (click for details)</summary>
+<summary>2. The Remittance Advice also does not show the actual net payment correctly when discount is taken (click for details)</summary>
 <ul>
 <li>Report layout adjusted to include new columns for Discount Claimed and Other deductions.</li>
 <li>Font reduced to 7pt to accommodate new columns</li>
@@ -23,9 +23,9 @@
 </ul>
 </details>
 <br>
-
+<!-- next issue -->
 <details>
-<summary>On 'Request Approval', when matched amount and payment amount don't match, clicking No on the confirmation dialog has no effect (click for details)</summary>
+<summary>3. On 'Request Approval', when matched amount and payment amount don't match, clicking No on the confirmation dialog has no effect (click for details)</summary>
 <ul>
 <li>Click on No now results in operation being cancelled.</li>
 </ul>
