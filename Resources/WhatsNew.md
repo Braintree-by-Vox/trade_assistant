@@ -1,4 +1,4 @@
-# Release notes
+## Release notes
 <!-- 
 - [Vendor Reconciliation](#vendor-reconcliation)
 - [Debtors Collections](#debtors-collections)
@@ -7,7 +7,7 @@
 
 **Release 26.0.20251124.1 (26.5)**
 <details>
-<summary>> 1. Error message: Amount to pay does not equal matched amount" when clicking on 'Request Approval' (click for details)</summary>
+<summary>1. Error message: Amount to pay does not equal matched amount" when clicking on 'Request Approval' (click for details)</summary>
 <ul>
 <li>Modified filter before calculating totals</li>
 </ul>
@@ -44,7 +44,7 @@
 </ul>
 </details>
 
-**Release 26.0.20251119.1**
+**Release 26.0.20251119.1 (26.3)**
 <details> 
 <summary>Manage settlement discount</summary>
 <ul>
@@ -59,7 +59,3 @@
 </li>
 </ul>
 </details>
-
-# Debtors Collections
-
-# FEC
