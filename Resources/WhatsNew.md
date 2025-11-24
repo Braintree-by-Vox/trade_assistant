@@ -10,11 +10,10 @@
 <details>
 <summary>Error message: Amount to pay does not equal matched amount" when clicking on 'Request Approval' (click for details)</summary>
 <ul>
-<li>Modified filter before calculating</li>
+<li>Modified filter before calculating totals</li>
 </ul>
 </details>
-
-
+<br>
 <details>
 <summary>The Remittance Advice also does not show the actual net payment correctly when discount is taken (click for details)</summary>
 <ul>
@@ -24,7 +23,6 @@
 </ul>
 </details>
 <br>
-
 <details>
 <summary>On 'Request Approval', when matched amount and payment amount don't match, clicking No on the confirmation dialog has no effect (click for details)</summary>
 <ul>
