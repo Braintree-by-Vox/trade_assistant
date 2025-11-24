@@ -1,12 +1,12 @@
 # Release notes
-
+<!-- 
 - [Vendor Reconciliation](#vendor-reconcliation)
 - [Debtors Collections](#debtors-collections)
 - [FEC](#fec)
 
-# Vendor Reconcliation
+# Vendor Reconcliation -->
 
-## Release 26.0.20251124.1 (26.5)
+### Release 26.0.20251124.1 (26.5)
 <details>
 <summary>Error message: Amount to pay does not equal matched amount" when clicking on 'Request Approval' (click for details)</summary>
 <ul>
@@ -14,6 +14,7 @@
 </ul>
 </details>
 <br>
+
 <details>
 <summary>The Remittance Advice also does not show the actual net payment correctly when discount is taken (click for details)</summary>
 <ul>
@@ -23,14 +24,15 @@
 </ul>
 </details>
 <br>
+
 <details>
 <summary>On 'Request Approval', when matched amount and payment amount don't match, clicking No on the confirmation dialog has no effect (click for details)</summary>
 <ul>
-<li>Click on No now results in operation being cancelle.</li>
+<li>Click on No now results in operation being cancelled.</li>
 </ul>
 </details>
 
-## Release 26.0.20251121.1 (26.4)
+### Release 26.0.20251121.1 (26.4)
 
 <details>
 <summary>Allow selected users to override payment discounts from Vendor Recon page (click for details)</summary>
