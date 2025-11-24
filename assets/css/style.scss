@@ -332,22 +332,23 @@ body {
 // Collapsible details/summary styling
 .main-content {
   details {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.25rem;
+    margin-top: 0;
     
     summary {
       color: $braintree-colour7;
       cursor: pointer;
       font-weight: bold;
       margin-bottom: 0;
+      padding: 0.25rem 0;
       
       &:hover {
         opacity: 0.8;
       }
-    }
-    
+    }    
     // Reduce spacing when collapsed
     &:not([open]) {
-      margin-bottom: 0.1rem;
+      margin-bottom: 0.25rem;
     }
   }
 }
