@@ -14,6 +14,7 @@
 </ul>
 </details>
 
+
 <details>
 <summary>The Remittance Advice also does not show the actual net payment correctly when discount is taken (click for details)</summary>
 <ul>
@@ -22,6 +23,7 @@
 <li>Calculation of nett payment adjusted to deduct discount and Other Deductions</li>
 </ul>
 </details>
+<br>
 
 <details>
 <summary>On 'Request Approval', when matched amount and payment amount don't match, clicking No on the confirmation dialog has no effect (click for details)</summary>
