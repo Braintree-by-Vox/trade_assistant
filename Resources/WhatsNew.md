@@ -3,20 +3,19 @@
 - [Vendor Reconciliation](#vendor-reconcliation)
 - [Debtors Collections](#debtors-collections)
 - [FEC](#fec)
-
 # Vendor Reconcliation -->
 
 ### Release 26.0.20251124.1 (26.5)
 <details>
-<summary>Error message: Amount to pay does not equal matched amount" when clicking on 'Request Approval' (click for details)</summary>
+<summary>1. Error message: Amount to pay does not equal matched amount" when clicking on 'Request Approval' (click for details)</summary>
 <ul>
-<li>Modified filter before calculating totals</li>
+<li>2. Modified filter before calculating totals</li>
 </ul>
 </details>
 <br>
 
 <details>
-<summary>The Remittance Advice also does not show the actual net payment correctly when discount is taken (click for details)</summary>
+<summary>3. The Remittance Advice also does not show the actual net payment correctly when discount is taken (click for details)</summary>
 <ul>
 <li>Report layout adjusted to include new columns for Discount Claimed and Other deductions.</li>
 <li>Font reduced to 7pt to accommodate new columns</li>
