@@ -14,3 +14,20 @@ On installation, the system will have created
 
 ![alt text](FECSetup.png)
 
+## Creating contracts
+Search for FEC Contracts, and click on the link to open the list.
+From the list, click on New to create a new contract.
+
+![alt text](image.png)
+
+Select a bank account from the drop down. The system will allocate a contract number.
+Complete the required information in the header:
+
+| Field Name | Content |
+|---|---|
+| FEC Contract No. | The document number issued by the bank |
+| Purchase Date | The date on which the contract was purchased|
+| Settlement date|    |
+
+
+
