@@ -19,7 +19,7 @@ On installation, the system will have created
 Search for FEC Contracts, and click on the link to open the list.
 From the list, click on New to create a new contract.
 
-![alt text](image.png)
+![alt text](Release.png)
 
 Select a bank account from the drop down. The system will allocate a contract number.
 Complete the required information in the header:
@@ -67,11 +67,39 @@ The field 'FEC Contract' shows the value covered by FEC contracts.
 
 ![alt text](image-6.png)
 
+**Link a purchase document to a Contract**
+From a purchase order or invoice, you can link the document to one or more open contracts of the same currency as the purchase.
+- Create a new purchase document
+- Assign a foreign currency to the document
+- Capture the document lines.
+- Click on 'FEC Contracts'.
+
+    ![alt text](image-7.png)
+
+- The FEC Assignment page will open. Click in the Contract No. field, and use the lookup button to select a contract from the list.
+  
+    ![alt text](image-8.png)
+
+- In FEC Assignment List page, select a FEC contract from the lookup. The FEC and document will now be connected.
+- If the contract has insufficient value to cover the document, you can select additional contracts as required.
+  
 **Post a receipt for a FEC-linked purchase order**
+Purchase orders which are linked to a contract can be received using standard BC functionality - either via the purchase order, or via a warehouse receipt.
+
+Goods will be received to stock using the applicable FEC exchange rate. If there are multiple contracts attached to the order, the exchange rate will be averaged.
+
+After posting the receipt, the status of the document on the Contract changes to 'Received', and a new entry is added to the Contract ledger:
+
+![alt text](image-9.png)
 
 **Post an invoice for a FEC-linked purchase order**
+A purchase invoice can be posted from the purchase order using standard BC functionality. After posting, the status of the document on the contract changes to 'Posted'. If the order was separately received beforehand, this value will be reversed in the ledger and replaced with the invoice:
+
+![alt text](image-10.png)
 
 **Post an invoice linked to FEC**
+An invoice not associated with a purchase order is posted in the normal way. An entry will be added to the ledger.
 
-**Link a posted invoice to FEC**
+**Modifying FEC assignments**
+Unposted orders and invoices can be removed from a contract, and assigned to a different contract.
 
