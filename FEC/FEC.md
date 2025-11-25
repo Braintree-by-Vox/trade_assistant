@@ -27,7 +27,10 @@ Complete the required information in the header:
 |---|---|
 | FEC Contract No. | The document number issued by the bank |
 | Purchase Date | The date on which the contract was purchased|
-| Settlement date|    |
+| Settlement date|    | Will be set by adding the default expiry period to the purchase date, amend if required|
+| Currency code| Defaults to the bank's currency; amend if necessary |
+| Rate of Exchange | Defaults to system exchange rate. Change to the rate of the contract|
+| Forex Amount Purchased | The value of the contract |
 
 
 

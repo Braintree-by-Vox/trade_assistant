@@ -5,9 +5,9 @@
 - [FEC](#fec)
 # Vendor Reconcliation -->
 
-**Release 26.0.20251124.1 (26.5)**
+**Release 26.0.20251124.3 (26.5)**
 <details>
-<summary>1. Error message: Amount to pay does not equal matched amount" when clicking on 'Request Approval' (click for details)</summary>
+<summary>1. VRS: Error message: Amount to pay does not equal matched amount" when clicking on 'Request Approval' (click for details)</summary>
 <ul>
 <li>Modified filter before calculating totals</li>
 </ul>
@@ -15,7 +15,7 @@
 
 <!-- next issue -->
 <details>
-<summary>2. The Remittance Advice also does not show the actual net payment correctly when discount is taken (click for details)</summary>
+<summary>2. VRS: The Remittance Advice also does not show the actual net payment correctly when discount is taken (click for details)</summary>
 <ul>
 <li>Report layout adjusted to include new columns for Discount Claimed and Other deductions.</li>
 <li>Font reduced to 7pt to accommodate new columns</li>
@@ -25,7 +25,7 @@
 
 <!-- next issue -->
 <details>
-<summary>3. On 'Request Approval', when matched amount and payment amount don't match, clicking No on the confirmation dialog has no effect (click for details)</summary>
+<summary>3. VRS: On 'Request Approval', when matched amount and payment amount don't match, clicking No on the confirmation dialog has no effect (click for details)</summary>
 <ul>
 <li>Click on No now results in operation being cancelled.</li>
 </ul>
@@ -46,7 +46,7 @@
 
 **Release 26.0.20251119.1 (26.3)**
 <details> 
-<summary>Manage settlement discount</summary>
+<summary>VRS: Manage settlement discount</summary>
 <ul>
 <li>Requirement: Handle settlement discounts on invoices being settled.</li>
 <li>Changes:
