@@ -19,7 +19,7 @@ On installation, the system will have created
 Search for FEC Contracts, and click on the link to open the list.
 From the list, click on New to create a new contract.
 
-![alt text](Release.png)
+![alt text](NewFEC.png)
 
 Select a bank account from the drop down. The system will allocate a contract number.
 Complete the required information in the header:
@@ -35,37 +35,37 @@ Complete the required information in the header:
 
 The system will calculate the value of the contract in local currency, as per the following example:
 
-![alt text](image-1.png)
+![alt text](LedgerEntryMenu.png)
 
 **Release and Post the Contract**
 Click on 'Release' in the menu bar.
 
-![alt text](image.png)
+![alt text](Release.png)
 
 The FEC header will no longer be editable. You can re-open the contract at this point, if you need to change anything. If you are happy with the contract, click on 'Post'. This will create an entry in the FEC ledger, recording the exact value of the contract. The entries can be viewed under 'Ledger Entries'.
 
 **Load Purchase Documents from Contract**
 To load multiple purchase orders, invoices or credit memos from the contract, click on 'Load Documents'. (This option will not be available until the contract has been posted.)
 
-![alt text](image-2.png)
+![alt text](LoadDocuments.png)
 
 From the dialog, select the document types that need to be included. (By default, orders and invoices will be included.) Click OK.
 
-![alt text](image-3.png)
+![alt text](SelectDocTypes.png)
 
 A list of available documents in the currency of the contract will be presented. To appear on the list, the document must have been released, and must have a due date on or before the expiry date of the contract.
 Highlight the documents you want to load onto the contract, and click OK.
 
-![alt text](image-4.png)
+![alt text](GetDocs.png)
 
 The documents will be connected to the contract, and appear in the lines of the contract card. The balance of the contract will be updated:
 
-![alt text](image-5.png)
+![alt text](FECWithDocs.png)
 
 You can review the documents by clicking on the Source Document No. The document page will open.
 The field 'FEC Contract' shows the value covered by FEC contracts.
 
-![alt text](image-6.png)
+![alt text](LinktoOrder.png)
 
 **Link a purchase document to a Contract**
 From a purchase order or invoice, you can link the document to one or more open contracts of the same currency as the purchase.
@@ -74,11 +74,11 @@ From a purchase order or invoice, you can link the document to one or more open 
 - Capture the document lines.
 - Click on 'FEC Contracts'.
 
-    ![alt text](image-7.png)
+    ![alt text](OrderFECLink.png)
 
 - The FEC Assignment page will open. Click in the Contract No. field, and use the lookup button to select a contract from the list.
   
-    ![alt text](image-8.png)
+    ![alt text](AddContractToOrder.png)
 
 - In FEC Assignment List page, select a FEC contract from the lookup. The FEC and document will now be connected.
 - If the contract has insufficient value to cover the document, you can select additional contracts as required.
@@ -90,12 +90,12 @@ Goods will be received to stock using the applicable FEC exchange rate. If there
 
 After posting the receipt, the status of the document on the Contract changes to 'Received', and a new entry is added to the Contract ledger:
 
-![alt text](image-9.png)
+![alt text](AddContractToOrder.png)
 
 **Post an invoice for a FEC-linked purchase order**
 A purchase invoice can be posted from the purchase order using standard BC functionality. After posting, the status of the document on the contract changes to 'Posted'. If the order was separately received beforehand, this value will be reversed in the ledger and replaced with the invoice:
 
-![alt text](image-10.png)
+![alt text](LedgerEntryWithInvoice.png)
 
 **Post an invoice linked to FEC**
 An invoice not associated with a purchase order is posted in the normal way. An entry will be added to the ledger.

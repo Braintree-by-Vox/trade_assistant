@@ -5,6 +5,14 @@
 - [FEC](#fec)
 # Vendor Reconcliation -->
 
+**Release 26.0.20251126.1 (26.6)**
+<details>
+<summary>1. VRS: When suggesting lines, system requires response to prompt for discount (click for details)</summary>
+<ul>
+<li>Message is suppressed if discount value on vendor ledger entry is the same as discount available on recon line.</li>
+</ul>
+</details>
+
 **Release 26.0.20251124.3 (26.5)**
 <details>
 <summary>1. VRS: Error message: Amount to pay does not equal matched amount" when clicking on 'Request Approval' (click for details)</summary>
