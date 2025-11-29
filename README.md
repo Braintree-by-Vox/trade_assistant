@@ -1,3 +1,9 @@
+---
+layout: default
+title: Trade Assistant Extension for Business Central
+description: Vendor recon, debtors collections and foreign exchange contracts
+---
+
 # Trade Assistant
 Trade Assistant brings together useful functions related to the management of Supply Chain in Microsoft Dynamics 365 Business Central.
 

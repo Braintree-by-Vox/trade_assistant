@@ -3,6 +3,7 @@ layout: default
 title: Vendor Reconciliation for Business Central
 description: Support and documentation for Braintree's Vendor Reconciliation extension to Microsoft Dynamics 365 Business Central
 ---
+
 # Vendor Reconciliation
 The Vendor Reconciliation module allows an Accounts Payable administrator to match the transactions which appear on the vendor’s statement of account, and confirm the amount payable to the creditor
 
