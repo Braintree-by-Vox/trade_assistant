@@ -3,6 +3,7 @@ layout: purple
 title: Radical title fot testing purple
 description: Support and documentation for Braintree's Vendor Reconciliation extension to Microsoft Dynamics 365 Business Central
 ---
+
 # Configure Vendor Reconciliation
 
 ## Geting Started
