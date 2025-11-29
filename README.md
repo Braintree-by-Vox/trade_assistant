@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Trade Assistant Extension for Business Central
+# title: Trade Assistant Extension for Business Central
 description: Vendor recon, debtors collections and foreign exchange contracts
 ---
 
