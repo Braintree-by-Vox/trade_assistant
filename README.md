@@ -16,4 +16,4 @@ How to set up and run the Debtors Collection module
 ## [Forward Exchange Contracts](FEC/FEC.md)
 How to set up and run Foreign Exchange Cover
 
-## Landed Cost (Coming soon!)
+## [Landed Cost](LandedCost/LandedCost.MD)
