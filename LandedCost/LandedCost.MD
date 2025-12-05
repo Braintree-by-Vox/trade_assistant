@@ -35,7 +35,6 @@ Click on 'Edit List' and complete the details:
 | Calculation Amount | The price per unit, or percentage, or flat fee to apply |
 | Accrue on Receipt  | Indicates that the interim estimate will be accrued to general ledger when the product is received|
 
-
 ## Create landed costs on purchase orders
 
 ## Accrue costs on purchase receipts
