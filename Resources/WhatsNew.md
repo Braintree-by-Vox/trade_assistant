@@ -4,10 +4,18 @@
 - [Debtors Collections](#debtors-collections)
 - [FEC](#fec)
 # Vendor Reconcliation -->
+**Release 26.0.20251212.2 (27.1)**
+<details>
+<summary>VRS: Report layout - Payment authorisation (click for details)</summary>
+<ul>
+<li>Font in deatail changed to Calibri 7pt.</li>
+<li>Document columns changed to allow wrap.</li>
+</ul>
+</details>
 
 **Release 26.0.20251126.1 (26.6)**
 <details>
-<summary>1. VRS: When suggesting lines, system requires response to prompt for discount (click for details)</summary>
+<summary>VRS: When suggesting lines, system requires response to prompt for discount (click for details)</summary>
 <ul>
 <li>Message is suppressed if discount value on vendor ledger entry is the same as discount available on recon line.</li>
 </ul>
