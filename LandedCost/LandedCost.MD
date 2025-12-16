@@ -6,14 +6,34 @@ The Landed Cost module of Trade Assistant provides tools to incorporate interim 
 ## Configuration and Setup
 
 ### Item Charges
-Supplimentary costs are defined under the Item Charges table. The table allows you to specify a preferred supplier for each defined charge:
+Supplimentary costs are defined under the Item Charges table. The table allows you to specify a preferred supplier for each defined charge. :
 
 ![alt text](image.png)
 
-### Default charges per item
-Per item, you can specify a list of default charges that will be applied when purchasing the item. 
+### Landed Cost Templates
+Landed cost templates are used to define groups of item charges that should be applied to when buying certain products. After definition, the template can be attached to an item, or added on a purchase line.
 
-Go to the item list, and open the item card.
+Search for 'Landed Cost Template':
+
+![alt text](image-3.png)
+
+![alt text](image-4.png)
+
+Click on New to create a new template. 
+
+Go to the item list, and open the item card. Enter a code and description, and tick on 'Apply to Purchase'.
+
+![alt text](image-5.png)
+
+For each item charge to be applied, enter a line:
+
+| Field | Value |
+| Charge Item | Select an option from the dropdown. |
+| Accrue on Receipt | Tick ON if you want the charge to accrue when primary product is received |
+| Calculation Type | Select: Flat / Percent / Quantity |
+| Calculation Amount | The rate to be applied to an order line | 
+
+
 
 On the 'Costs and Purchasing' tab, drill down on the field 'Purchase Surcharge':
 
