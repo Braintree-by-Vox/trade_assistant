@@ -85,6 +85,15 @@ For each service provider used on the surcharge lines, a purchase order will be 
 ![alt text](image-12.png)
 
 ## Accrue costs on purchase receipts
+When a purchase receipt is posted, to which landed cost surcharges have been attached, the following actions take place, in addition to normal inventory postings:
+- A landed cost provision will be posted:
+  - Debit Cost of Goods Sold
+  - Credit Cost of Goods Sold (interim).
+- The associated purchase orders for the service providers will be updated to reflect the quantity received, and applied cost entries will be created.
+  
+![alt text](image-13.png)
+
+![alt text](image-14.png)
 
 ## Posting landed cost invoices
 
