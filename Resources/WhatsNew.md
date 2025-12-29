@@ -4,6 +4,14 @@
 - [Debtors Collections](#debtors-collections)
 - [FEC](#fec)
 # Vendor Reconcliation -->
+**Release 26.0.20251212.2 (27.1.1)**
+<details>
+<summary>VRS: Search for a vendor document number (click for details)</summary>
+<ul>
+<li>From the vendor ledger page, or vendor recon list, select 'Find Vendor Reconciliation, enter a document number or external document number. All recons on which the document appears will be listed. Click on the recon number to open the recon.</li>
+</ul>
+</details>
+
 **Release 26.0.20251212.2 (27.1)**
 <details>
 <summary>VRS: Report layout - Payment authorisation (click for details)</summary>
