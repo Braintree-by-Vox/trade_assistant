@@ -14,6 +14,8 @@ After matching the transactions against the business’s own records, the admini
 * Print a remittance advice, detailing the transactions being settled
 * Print a reconciliation between the balance stated by the creditor and the balance as per the business’s creditors ledger.
 
+![alt text](VRS_Process.drawio.svg)
+
 ## [Configuration](ConfigureVendorRecon.md)
 [Getting started with the Vendor Reconciliation module](ConfigureVendorRecon.md)
 
