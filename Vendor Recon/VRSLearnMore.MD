@@ -5,7 +5,7 @@ description: Support and documentation for Braintree's Vendor Reconciliation ext
 ---
 
 ## The business challenge
-As a business, we procure products and services from external suppliers. The supplier maintains a record of what they have supplied to our business, and based on those invoices, will make claims for payment.  We also maintain records of what we have procured from the suppliers, what they have delivered and what we agreed to pay for services. In theory, our records and the supplier's records should match, but often they do not. This can happen for a number of reasons, for example
+As a business, we procure products and services from external suppliers. The supplier maintains a record of what they have supplied to our business, and issues invoices to us. Based on the invoices, the supplier makes claims for payment.  We also maintain records of what we have procured from the suppliers, what they have delivered and what we agreed to pay for services. In theory, our records and the supplier's records should match, but often they do not. This can happen for a number of reasons, for example
 * Timing differences: the supplier has raised a valid invoice on their statement, but we have not yet processed it on our system.
 * Documents missing: an invoice may not have reached us, or got lost.
 * Human error: the supplier may have billed us in error for something that was not delivered, or we may have accidentally captured an invoice to the wrong supplier account.
