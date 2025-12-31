@@ -4,13 +4,6 @@ title: Vendor Reconciliation for Business Central
 description: Support and documentation for Braintree's Vendor Reconciliation extension to Microsoft Dynamics 365 Business Central
 ---
 
-How? 
-On-screen ageing with drill-throughs
-Record actions taken by credit controller and other stake-holders
-Issue reminders
-Keep team accountable
-
-
 ## The business challenge
 As a business, we sell products and services to our customers. We issue invoices to our customers for the services provided. Usually once a month, we issue a statement of account to the customer and request payment. The business relies on timeous payments from customers to provide cash for paying suppliers and staff. It's therefore important to follow up with customers on overdue balances and to resolve disputes and queries quickly. It's also important to provide visibility of collections to stakeholders - owners, management, account managers.
 
