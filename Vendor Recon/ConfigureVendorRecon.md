@@ -62,7 +62,7 @@ For each recon administrator, fill in the fields:
 | Vendor Recon Approver   | The name of the administrator's immediate supervisor   |
 | Default payment Jnl Template   | Select a payment journal batch template from the list   |
 | Default Payment Jnl Batch| Select a journal batch name from the list.|
-| Allow Discount Modify | Set to True to allow the user to modify Pmt discount on recon |
+| Allow Discount Modify | Set to True to allow the user to modify Pmt discount on reconciliation |
 
 Note: it is a good idea to create separate payment batches for each administrator.
 
@@ -76,7 +76,7 @@ For each account that you would like to use as a deduction, you need to enter
 - Account type (default G/L account)
 - Account No.: the number of the account to be debited with the deduction.
 - Calculation type: select Percent or Amount.
-- Deduction Percent: optional, if you want to apply a standard percent when the code is selected on a recon.
+- Deduction Percent: optional, if you want to apply a standard percent when the code is selected on a reconciliation.
 
 ## Withholding Tax
 If you will be processing withholding tax for creditors:

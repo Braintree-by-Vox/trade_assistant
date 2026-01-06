@@ -57,4 +57,3 @@ After matching the creditors statement transactions against the business’s rec
 ## Process Overview
 
    ![alt text](VRS_Process.drawio.svg)
-

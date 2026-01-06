@@ -1,3 +1,9 @@
+---
+layout: default
+title: Braintree Landed Cost 
+description: Support and documentation for Braintree's Landed Cost extension to Microsoft Dynamics 365 Business Central
+---
+
 # Landed Cost
 
 ## [Adding landed costs to purchase orders](#create-landed-costs-on-purchase-orders)
@@ -28,7 +34,7 @@ The calculation type, calculation rate and preferred vendor will be defaulted fr
 Charges can be added manually to the list if desired.
 
 **Generate Surcharge Orders**
-For each surcharge, ensure that a vendor has been captured into the 'Sevice Provide' column.  Click on 'Generate Surcharge Orders'.
+For each surcharge, ensure that a vendor has been captured into the 'Service Provide' column.  Click on 'Generate Surcharge Orders'.
 
   ![alt text](image-10.png)
 

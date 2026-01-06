@@ -1,13 +1,17 @@
 ---
 layout: default
-title: Configure Vendor Reconciliation 
-description: Support and documentation for Braintree's Vendor Reconciliation extension to Microsoft Dynamics 365 Business Central
+title: Configure Landed Cost 
+description: Support and documentation for Braintree's Landed Cost extension to Microsoft Dynamics 365 Business Central
 ---
 
 # Landed Cost - Configuration and Setup
 
+- [Item Charges](#item-charges)
+- [Landed Cost Templates](#landed-cost-templates)
+- [Attach landed costs to items](#attach-landed-cost-templates-to-items)
+
 ### Item Charges
-Supplimentary costs are defined under the Item Charges table. The table allows you to specify a preferred supplier for each defined charge. :
+Supplementary costs are defined under the Item Charges table. The table allows you to specify a preferred supplier for each defined charge. :
 
   ![alt text](image.png)
 
@@ -53,4 +57,4 @@ On the Costs and Posting tab, select the field 'Landed Cost Template', and selec
 
 
 
-[**⬆️ Back to Top**](#landed-cost) &nbsp;&nbsp;&nbsp;&nbsp; [**🏠 Home**](/trade_assistant)
+[**⬆️ Back to Top**](#landed-cost---configuration-and-setup) &nbsp;&nbsp;&nbsp;&nbsp; [**🏠 Home**](/trade_assistant)
