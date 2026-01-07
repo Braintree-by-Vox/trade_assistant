@@ -11,9 +11,6 @@
 <summary>DCM: Collection Note Search (click for details)</summary>
 <ul>
 <li>Ability to search for a document number and view the collection notes on which it appears. </li>
-
-[How do I do this?](../DCM/RunDebtors.md)
-
 </ul></details>
 
 <details style="font-size: 0.85em;">
