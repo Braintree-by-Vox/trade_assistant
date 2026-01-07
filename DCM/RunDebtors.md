@@ -10,8 +10,9 @@ description: Support and documentation for Braintree's Debtors Collection extens
 - [Open Dashboard](#open-dashboard)
 - [Capture Notes](#capture-notes-on-the-customer)
 - [Collection Notes](#collection-notes)
-- [AgeAnalysis](#print-age-analysis)
-
+- [Age Analysis](#print-age-analysis)
+- [Find a document](#find-a-document)
+  
 ## Open Dashboard
 Search for 'Debtors Collection', and select the page.
 It's a good idea to bookmark the page.
@@ -65,6 +66,7 @@ Click on ‘Collection Note’ in the top menu bar:
 A new collection note will be opened.
 
 ![alt text](CustomerDash.png)
+
 Press Tab to move off the No. field. The system will insert a document number.
 Click on ‘Load Documents’.
 
@@ -90,5 +92,16 @@ From the Collection Dashboard, click on 'Age Analysis':
 
 Choose filters as required, and click on Download. The system will create an ageing report into Excel.
 
+## Find a document
+
+Search for 'Coll Note Document Search'.
+
+![alt text](image.png)
+
+Enter a document number or external document number and press Enter. The system will display a list of all collection notes on which the document occurs:
+
+![alt text](image-1.png)
+
+You can open the collection note by clicking on the collection note number.
 
 [**⬆️ Back to Top**](#content) &nbsp;&nbsp;&nbsp;&nbsp; [**🏠 Home**](/trade_assistant)

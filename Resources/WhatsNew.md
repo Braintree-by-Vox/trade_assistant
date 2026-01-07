@@ -1,5 +1,62 @@
 ## Release notes
 
+**Release .... (27.2.1)**
+<details style="font-size: 0.85em;">
+<summary>Trade assistant role centre (click for details)</summary>
+<ul>
+<li>New role centre created to access all trade assistant documents</li>
+</ul></details>
+
+<details style="font-size: 0.85em;">
+<summary>DCM: Collection Note Search (click for details)</summary>
+<ul>
+<li>Ability to search for a document number and view the collection notes on which it appears
+    [Click to find out how](../DCM/RunDebtors.md#find-a-document)
+</li>
+</ul></details>
+
+<details style="font-size: 0.85em;">
+<summary>DCM: Collection Note Document (click for details)</summary>
+<ul>
+<li></li>
+</ul></details>
+
+<details style="font-size: 0.85em;">
+<summary>DCM: Debtors Admin Customer list (click for details)</summary>
+<ul>
+<li>New report listing customers per debtors administrator</li>
+</ul></details>
+
+<details style="font-size: 0.85em;">
+<summary>DCM: Collection Note Search (click for details)</summary>
+<ul>
+<li></li>
+</ul></details>
+
+<details style="font-size: 0.85em;">
+<summary>DCM: Collection Note Search (click for details)</summary>
+<ul>
+<li></li>
+</ul></details>
+
+<details style="font-size: 0.85em;">
+<summary>VRS: Disable actions on archived document (click for details)</summary>
+<ul>
+<li></li>
+</ul></details>
+
+<details style="font-size: 0.85em;">
+<summary>VRS: Supplier Performance Report (click for details)</summary>
+<ul>
+<li>New report showing supplier reliability on purchase orders</li>
+</ul></details>
+
+<details style="font-size: 0.85em;">
+<summary>VRS: Unmatched GRV's (click for details)</summary>
+<ul>
+<li>New report showing purchase orders not delivered, or delivered and not invoiced.</li>
+</ul></details>
+
 **Release 26.0.20251212.2 (27.1.1)**
 <details style="font-size: 0.85em;">
 <summary>VRS: Search for a vendor document number (click for details)</summary>
