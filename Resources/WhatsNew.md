@@ -10,11 +10,7 @@
 <details style="font-size: 0.85em;">
 <summary>DCM: Collection Note Search (click for details)</summary>
 <ul>
-<li>Ability to search for a document number and view the collection notes on which it appears
-
-  [How do I do this>](../DCM/RunDebtors.md#find-a-document)
-
-</li>
+<li>Ability to search for a document number and view the collection notes on which it appears. [How do I do this?](../DCM/RunDebtors.md#find-a-document)</li>
 </ul></details>
 
 <details style="font-size: 0.85em;">
