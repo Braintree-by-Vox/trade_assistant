@@ -12,7 +12,8 @@
 <ul>
 <li>Ability to search for a document number and view the collection notes on which it appears
 
-[Click to find out how](../DCM/RunDebtors.md#find-a-document)
+  [How do I do this>](../DCM/RunDebtors.md#find-a-document)
+
 </li>
 </ul></details>
 
