@@ -10,14 +10,16 @@
 <details style="font-size: 0.85em;">
 <summary>DCM: Collection Note Search (click for details)</summary>
 <ul>
-<li>Ability to search for a document number and view the collection notes on which it appears. [How do I do this?](../DCM/RunDebtors#find-a-document)</li>
+<li>Ability to search for a document number and view the collection notes on which it appears. </li>
+
+[How do I do this?](../DCM/RunDebtors.md)
+
 </ul></details>
 
 <details style="font-size: 0.85em;">
 <summary>DCM: Collection Note Document (click for details)</summary>
 <ul>
-<li></li>
-</ul></details>
+<li>After creating and updating a collection note, you can now generate a PDF or hard copy of the collection note.</li></ul></details>
 
 <details style="font-size: 0.85em;">
 <summary>DCM: Debtors Admin Customer list (click for details)</summary>
