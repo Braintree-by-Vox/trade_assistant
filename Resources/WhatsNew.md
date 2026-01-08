@@ -5,13 +5,16 @@
 <summary>Trade assistant role centre (click for details)</summary>
 <ul>
 <li>New role centre created to access all trade assistant documents</li>
-<li>[test](../DCM/DebtorsCollection.md)</li>
-</ul></details>
+</ul>
+
+[test](../DCM/DebtorsCollection.md)
+
+</details>
 
 <details style="font-size: 0.85em;">
 <summary>DCM: Collection Note Search (click for details)</summary>
 <ul>
-<li>Ability to search for a document number and view the collection notes on which it appears. </li>
+<li>Search for a document number and view the collection notes on which it appears. </li>
 </ul></details>
 
 <details style="font-size: 0.85em;">
@@ -26,15 +29,9 @@
 </ul></details>
 
 <details style="font-size: 0.85em;">
-<summary>DCM: Collection Note Search (click for details)</summary>
+<summary>VRS: Recon Document Search (click for details)</summary>
 <ul>
-<li></li>
-</ul></details>
-
-<details style="font-size: 0.85em;">
-<summary>DCM: Collection Note Search (click for details)</summary>
-<ul>
-<li></li>
+<li>Search for a document number and view the vendor reconciliation on which it appears.</li>
 </ul></details>
 
 <details style="font-size: 0.85em;">
