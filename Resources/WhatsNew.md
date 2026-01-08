@@ -10,10 +10,8 @@
 <details style="font-size: 0.85em;">
 <summary>DCM: Collection Note Search (click for details)</summary>
 <ul>
-<li>Search for a document number and view the collection notes on which it appears. 
-<a href="{{ '/DCM/RunDebtors' | relative_url }}">Learn more</a>
-<a href="{{ '/DCM/RunDebtors#find-a-document' | relative_url }}">Learn more</a>
-</li>
+<li>Search for a document number and view the collection notes on which it appears. </li>
+<li><a href="{{ '/DCM/RunDebtors#find-a-document' | relative_url }}">Learn more</a></li>
 </ul></details>
 
 <details style="font-size: 0.85em;">
@@ -108,8 +106,7 @@
 <li>When discount is edited, user will be prompted to confirm.</li>
 <li>Discount amount will be transferred to vendor ledger entry</li>
 <li>Pmt Discount date on vendor ledger entry will be set to Recon payment date + 1 day</li>
-</ul>
-</details>
+</ul></details>
 
 **Release 26.0.20251119.1 (26.3)**
 <details style="font-size: 0.85em;"> 
@@ -124,14 +121,4 @@
   <li>discount will be applied to vendor payment when the payment journal is posted, using standard BC settlement discount function</li>
   </ul>
 </li>
-</ul></details>
-
-## Test links
-<details style="font-size: 0.85em;">
-<summary>Just a test</summary>
-<ul>
-<li>New role centre created to access all trade assistant documents</li>
-
-<li><a href="{{ '/DCM/DCMLearnMore' | relative_url }}">Learn more</a></li>
-
 </ul></details>
