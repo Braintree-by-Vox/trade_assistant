@@ -1,6 +1,6 @@
 ## Release notes
 
-**Release .... (27.2.1)**
+**Release 27.0.20260107.3 (27.2.1)**
 <details style="font-size: 0.85em;">
 <summary>Trade assistant role centre (click for details)</summary>
 <ul>
