@@ -5,11 +5,7 @@
 <summary>Trade assistant role centre (click for details)</summary>
 <ul>
 <li>New role centre created to access all trade assistant documents</li>
-</ul>
-
-[test](../DCM/DebtorsCollection.md)
-
-</details>
+</ul></details>
 
 <details style="font-size: 0.85em;">
 <summary>DCM: Collection Note Search (click for details)</summary>
@@ -37,7 +33,7 @@
 <details style="font-size: 0.85em;">
 <summary>VRS: Disable actions on archived document (click for details)</summary>
 <ul>
-<li></li>
+<li>Actions relating to calculations and payment creation are disabled on the Vendor Recon card if the status is Archived</li>
 </ul></details>
 
 <details style="font-size: 0.85em;">
@@ -57,8 +53,7 @@
 <summary>VRS: Search for a vendor document number (click for details)</summary>
 <ul>
 <li>From the vendor ledger page, or vendor recon list, select 'Find Vendor Reconciliation, enter a document number or external document number. All recons on which the document appears will be listed. Click on the recon number to open the recon.</li>
-</ul>
-</details>
+</ul></details>
 
 **Release 26.0.20251212.2 (27.1)**
 <details style="font-size: 0.85em;">
@@ -66,24 +61,21 @@
 <ul>
 <li>Font in detail changed to Calibri 7pt.</li>
 <li>Document columns changed to allow wrap.</li>
-</ul>
-</details>
+</ul></details>
 
 **Release 26.0.20251126.1 (26.6)**
 <details style="font-size: 0.85em;">
 <summary>VRS: When suggesting lines, system requires response to prompt for discount (click for details)</summary>
 <ul>
 <li>Message is suppressed if discount value on vendor ledger entry is the same as discount available on recon line.</li>
-</ul>
-</details>
+</ul></details>
 
 **Release 26.0.20251124.3 (26.5)**
 <details style="font-size: 0.85em;">
 <summary>1. VRS: Error message: Amount to pay does not equal matched amount" when clicking on 'Request Approval' (click for details)</summary>
 <ul>
 <li>Modified filter before calculating totals</li>
-</ul>
-</details>
+</ul></details>
 
 <!-- next issue -->
 <details style="font-size: 0.85em;">
@@ -129,5 +121,15 @@
   <li>discount will be applied to vendor payment when the payment journal is posted, using standard BC settlement discount function</li>
   </ul>
 </li>
-</ul>
-</details>
+</ul></details>
+
+## Test links
+<details style="font-size: 0.85em;">
+<summary>Just a test</summary>
+<ul>
+<li>New role centre created to access all trade assistant documents</li>
+
+
+[testlink](../DCM/DCMLearnMore.MD)
+
+</ul></details>
