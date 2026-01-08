@@ -1,5 +1,7 @@
 ## Release notes
 
+[test](../DCM/DebtorsCollection.md)
+
 **Release .... (27.2.1)**
 <details style="font-size: 0.85em;">
 <summary>Trade assistant role centre (click for details)</summary>
