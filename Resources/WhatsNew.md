@@ -10,7 +10,10 @@
 <details style="font-size: 0.85em;">
 <summary>DCM: Collection Note Search (click for details)</summary>
 <ul>
-<li>Search for a document number and view the collection notes on which it appears. </li>
+<li>Search for a document number and view the collection notes on which it appears. 
+<a href="{{ '/DCM/RunDebtors' | relative_url }}">Learn more</a>
+<a href="{{ '/DCM/RunDebtors#find-a-document' | relative_url }}">Learn more</a>
+</li>
 </ul></details>
 
 <details style="font-size: 0.85em;">
@@ -129,8 +132,6 @@
 <ul>
 <li>New role centre created to access all trade assistant documents</li>
 
-<a href="/DCM/DCMLearnMore.md">Testing</a>
-
-<li><a href="{{ '/DCM/DCMLearnMore' | relative_url }}">Release Notes</a></li>
+<li><a href="{{ '/DCM/DCMLearnMore' | relative_url }}">Learn more</a></li>
 
 </ul></details>
