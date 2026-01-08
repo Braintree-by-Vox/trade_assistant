@@ -28,7 +28,7 @@
 <details style="font-size: 0.85em;">
 <summary>VRS: Recon Document Search (click for details)</summary>
 <ul>
-<li>Search for a document number and view the vendor reconciliation on which it appears.</li>
+<li>Search for a document number and view the vendor reconciliation on which it appears.  <a href="{{ '/VRS/RunVendorRecon#find-a-document' | relative_url }}">Learn more</a></li>
 </ul></details>
 
 <details style="font-size: 0.85em;">

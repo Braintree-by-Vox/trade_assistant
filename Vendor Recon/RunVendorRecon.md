@@ -12,6 +12,7 @@ description: Support and documentation for Braintree's Vendor Reconciliation ext
 - [Handling Settlement Discounts](#handling-settlement-discounts)
 - [Capture Deductions](#capture-deductions)
 - [Calculate payments](#calculate-the-payment)
+- [Find a document](#find-a-document)
   
 Search for 'Vendor Recon', and select the page. 
 It's a good idea to bookmark this page.
@@ -196,5 +197,16 @@ On the vendor reconciliation list page:
 
 Click on the recon number to open the reconciliation.
 
+## Find a document
+
+Search for 'Vendor Recon Document Search'.
+
+![alt text](image.png)
+
+Enter a document number or external document number and press Enter. The system will display a list of all recons on which the document occurs:
+
+![alt text](image-1.png)
+
+You can open the recon by clicking on the recon number.
 
 [**⬆️ Back to Top**](#content) &nbsp;&nbsp;&nbsp;&nbsp; [**🏠 Home**](/trade_assistant)
