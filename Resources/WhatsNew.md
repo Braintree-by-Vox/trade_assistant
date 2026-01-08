@@ -26,12 +26,6 @@
 </ul></details>
 
 <details style="font-size: 0.85em;">
-<summary>VRS: Recon Document Search (click for details)</summary>
-<ul>
-<li>Search for a document number and view the vendor reconciliation on which it appears.  <a href="{{ '/VRS/RunVendorRecon#find-a-document' | relative_url }}">Learn more</a></li>
-</ul></details>
-
-<details style="font-size: 0.85em;">
 <summary>VRS: Disable actions on archived document (click for details)</summary>
 <ul>
 <li>Actions relating to calculations and payment creation are disabled on the Vendor Recon card if the status is Archived</li>
@@ -49,11 +43,18 @@
 <li>New report showing purchase orders not delivered, or delivered and not invoiced.</li>
 </ul></details>
 
+<details style="font-size: 0.85em;">
+<summary>FEC: Bug fix: message  (click for details)</summary>
+<ul>
+<li>Debugging message in OnSetApplyToAmountOnBeforeVendEntryEdit removed.</li>
+</ul></details>
+
 **Release 26.0.20251212.2 (27.1.1)**
 <details style="font-size: 0.85em;">
 <summary>VRS: Search for a vendor document number (click for details)</summary>
 <ul>
-<li>From the vendor ledger page, or vendor recon list, select 'Find Vendor Reconciliation, enter a document number or external document number. All recons on which the document appears will be listed. Click on the recon number to open the recon.</li>
+<li>From the vendor ledger page, or vendor recon list, select 'Find Vendor Reconciliation, enter a document number or external document number. All recons on which the document appears will be listed. Click on the recon number to open the recon.  <a href="{{ '/VRS/RunVendorRecon#find-a-document' | relative_url }}">Learn more</a>
+</li>
 </ul></details>
 
 **Release 26.0.20251212.2 (27.1)**
