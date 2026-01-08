@@ -129,8 +129,10 @@
 <ul>
 <li>New role centre created to access all trade assistant documents</li>
 
-<a href="..DCM/DCMLearnMore.md">
+<a href="..DCM/DCMLearnMore.md">Testing</a></li>
 
-[testlink](../DCM/DCMLearnMore.MD)
+<li><a href="{{ '/DCM/DCMLearnMore' | relative_url }}">Release Notes</a></li>
+
+[Link to another page](/DCM/DCMLearnMore.MD)
 
 </ul></details>
