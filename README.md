@@ -1,11 +1,7 @@
-<!-- ---
-layout: default
-# title: Trade Assistant Extension for Business Central
-description: Vendor recon, debtors collections and foreign exchange contracts
---- -->
-
 # Trade Assistant
 Trade Assistant brings together useful functions related to the management of Supply Chain in Microsoft Dynamics 365 Business Central.
+
+![alt text](image.png)
 
 ## [Vendor Reconciliation](Vendor Recon/VendorRecon.md)
 How to set up and run the Vendor Reconciliation module

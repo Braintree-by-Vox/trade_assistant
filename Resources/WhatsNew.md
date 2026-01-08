@@ -1,12 +1,11 @@
 ## Release notes
 
-[test](../DCM/DebtorsCollection.md)
-
 **Release .... (27.2.1)**
 <details style="font-size: 0.85em;">
 <summary>Trade assistant role centre (click for details)</summary>
 <ul>
 <li>New role centre created to access all trade assistant documents</li>
+<li>[test](../DCM/DebtorsCollection.md)</li>
 </ul></details>
 
 <details style="font-size: 0.85em;">
