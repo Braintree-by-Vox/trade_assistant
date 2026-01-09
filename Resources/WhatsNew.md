@@ -4,7 +4,7 @@
 <details style="font-size: 0.85em;">
 <summary>Trade assistant role centre (click for details)</summary>
 <ul>
-<li>New role centre created to access all trade assistant documents</li>
+<li>New role centre created to access all trade assistant documents. Set user profile to 'Braintree Trade Assistant'.</li>
 </ul></details>
 
 <details style="font-size: 0.85em;">
