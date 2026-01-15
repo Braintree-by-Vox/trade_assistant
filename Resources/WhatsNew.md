@@ -1,5 +1,12 @@
 ## Release notes
 
+**Release 27.0.20260115.2 (27.2.1)**
+<details style="font-size: 0.85em;">
+<summary>VRS: Bug using attachments with Service Documents (click for details)</summary>
+<ul>
+<li>Attempting to attach a document to a service document resulted in an error. Issue has been resolved.</li>
+</ul></details>
+
 **Release 27.0.20260107.3 (27.2.1)**
 <details style="font-size: 0.85em;">
 <summary>Trade assistant role centre (click for details)</summary>
