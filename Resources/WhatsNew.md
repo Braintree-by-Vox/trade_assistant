@@ -1,5 +1,13 @@
 ## Release notes
 
+**Release 27..20260204.1 (27.2.3)**
+<details style="font-size: 0.85em;">
+<summary>DCM: Handling Zero-balance accounts (click for details)</summary>
+<ul>
+<li>The DCM dashboard now includes an option to show or hide customers with a zero balance.</li>
+<li>The DCM dashboard now includes an action to remove summary notes from accounts with zero balances.</li>
+</ul></details>
+
 **Release 27.0.20260115.2 (27.2.1)**
 <details style="font-size: 0.85em;">
 <summary>VRS: Bug using attachments with Service Documents (click for details)</summary>
