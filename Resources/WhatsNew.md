@@ -7,11 +7,12 @@
 <li>The DCM dashboard now includes an option to show or hide customers with a zero balance.</li>
 <li>The DCM dashboard now includes an action to remove summary notes from accounts with zero balances.</li>
 </ul></details>
-<details style="font-size: 0.85em;">
+
+<!-- <details style="font-size: 0.85em;">
 <summary>VRS: Transactions on Hold (click for details)</summary>
 <ul>
 <li>Vendor Ledger entries which have been place on hold can be reconciled, but not settled via a vendor recon</li>
-</ul></details>
+</ul></details> -->
 
 **Release 27.0.20260115.2 (27.2.1)**
 <details style="font-size: 0.85em;">
