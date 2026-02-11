@@ -4,7 +4,7 @@
 <details style="font-size: 0.85em;">
 <summary>DCM: Handling Zero-balance accounts (click for details)</summary>
 <ul>
-<li>The DCM dashboard now includes an option to show or hide customers with a zero balance.
+<li>The DCM dashboard now includes an option to show or hide customers with a zero balance. XXX 
 The DCM dashboard now includes an action to remove summary notes from accounts with zero balances.</li>
 </ul></details>
 
