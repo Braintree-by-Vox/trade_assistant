@@ -4,8 +4,14 @@
 <details style="font-size: 0.85em;">
 <summary>DCM: Handling Zero-balance accounts (click for details)</summary>
 <ul>
-<li>The DCM dashboard now includes an option to show or hide customers with a zero balance. XXX 
+<li>The DCM dashboard now includes an option to show or hide customers with a zero balance.
 The DCM dashboard now includes an action to remove summary notes from accounts with zero balances.</li>
+</ul></details>
+
+<details style="font-size: 0.85em;">
+<summary>DCM: Link to Reminders (click for details)</summary>
+<ul>
+<li>Issued Reminders are accessible from the Collection Dashboard and from the subpage for the selected customer.</li>
 </ul></details>
 
 <details style="font-size: 0.85em;">
