@@ -1,5 +1,24 @@
 ## Release notes
 
+**Release 27.2.20260213.1 (27.2.4)**
+<details style="font-size: 0.85em;">
+<summary>DCM: Bug: customer factbox on collection note (click for details)</summary>
+<ul>
+<li>The DCM collection note shows wrong customer: data link added to select customer associated with note.</li>
+</ul></details>
+
+<details style="font-size: 0.85em;">
+<summary>DCM: when adding a document to a collection note, reason codes and notes are copied from last collection note (click for details)</summary>
+<ul>
+<li></li>
+</ul></details>
+
+<details style="font-size: 0.85em;">
+<summary>DCM: Added menu options to display reminders and finance charge memos (click for details)</summary>
+<ul>
+<li></li>
+</ul></details>
+
 **Release 27.2.20260211.1 (27.2.3)**
 <details style="font-size: 0.85em;">
 <summary>DCM: Handling Zero-balance accounts (click for details)</summary>
