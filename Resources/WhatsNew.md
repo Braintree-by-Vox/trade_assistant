@@ -1,22 +1,29 @@
 ## Release notes
 
+**Release 27.2.20260219.1 (27.2.4)**
+<details style="font-size: 0.85em;">
+<summary>VRS: payment reference  (click for details)</summary>
+<ul>
+<li>When generating the payment journal from a Vendor Recon, the payment reference will be populated with the creditor's account number.</li>
+</ul></details>
+
 **Release 27.2.20260213.1 (27.2.4)**
 <details style="font-size: 0.85em;">
-<summary>DCM: Bug: customer factbox on collection note (click for details)</summary>
+<summary>DCM: Bug: customer FactBox on collection note (click for details)</summary>
 <ul>
 <li>The DCM collection note shows wrong customer: data link added to select customer associated with note.</li>
 </ul></details>
 
 <details style="font-size: 0.85em;">
-<summary>DCM: when adding a document to a collection note, reason codes and notes are copied from last collection note (click for details)</summary>
+<summary>DCM: Collection note creation (click for details)</summary>
 <ul>
-<li></li>
+<li>when adding a document to a collection note, reason codes and notes are copied from last collection note</li>
 </ul></details>
 
 <details style="font-size: 0.85em;">
-<summary>DCM: Added menu options to display reminders and finance charge memos (click for details)</summary>
+<summary>DCM: Collection Dashboard (click for details)</summary>
 <ul>
-<li></li>
+<li>Added menu options to display reminders and finance charge memos</li>
 </ul></details>
 
 **Release 27.2.20260211.1 (27.2.3)**
