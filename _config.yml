@@ -3,8 +3,8 @@ description: Documentation, Support and Resources for Braintree's Trade Assistan
 theme: jekyll-theme-cayman
 
 # SEO Settings
-url: "https://braintree-by-vox.github.io"  # UPDATE THIS with your actual domain
-baseurl: "https://braintree-by-vox.github.io/trade_assistant/"
+url: "https://braintree-by-vox.github.io"
+baseurl: "/trade_assistant"
 author: Braintree
 lang: en-US
 
