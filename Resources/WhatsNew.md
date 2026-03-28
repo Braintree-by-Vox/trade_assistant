@@ -1,5 +1,31 @@
 ## Release notes
 
+**Release 27.2.20260327.1 (27.2.7)**
+<details style="font-size: 0.85em;">
+<summary>DCM: Cosmetic changes (click for details)</summary>
+<ul>
+<li>Collections Dashboard - switch FactBoxes around</li>
+</ul></details>
+
+<details style="font-size: 0.85em;">
+<summary>DCM: New report - Collection Note(click for details)</summary>
+<ul>
+<li>From a collection note, an option is added to generate a RDLC report of the collection note.</li>
+</ul></details>
+
+<details style="font-size: 0.85em;">
+<summary>User Setup: New option to generate User Setup records from registered users(click for details)</summary>
+<ul>
+<li>When accessing the user setup list from Trade Assistant Setup, an action, 'Create Users', has been added. This will create users in User Setup if they do not exist and create a payment journal batch for each user. </li>
+</ul></details>
+
+<details style="font-size: 0.85em;">
+<summary>VRS: Deductions (click for details)</summary>
+<ul>
+<li>Deduction code lookup to Return Reasons table is filtered for entries with a GL account number. Return reasons not linked to GL are not available for selection.</li>
+</ul></details>
+
+
 **Release 27.2.20260219.1 (27.2.4)**
 <details style="font-size: 0.85em;">
 <summary>VRS: payment reference  (click for details)</summary>

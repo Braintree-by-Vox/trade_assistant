@@ -6,7 +6,7 @@ description: Support and documentation for Braintree's Vendor Reconciliation ext
 
 # Configure Vendor Reconciliation
 
-## Geting Started
+## Getting Started
 - [Installing from Appsource](#installing-from-appsource)
 - [How to request a license registration key](#how-to-request-a-licence-registration-key)
 - [Number Series](#number-series)
@@ -53,6 +53,7 @@ Use this to create a workflow based on standard Business Central workflow tools.
 ## User Setups
 Users who will be running vendor reconciliations need some basic setups.
 From the Trade Assistant setup page, select the menu option: 'User Setups':
+
 ![alt text](SelectUserSetup.png)
 
 For each recon administrator, fill in the fields:

@@ -85,6 +85,12 @@ Against each document, you can record information about the status of the docume
 
 The comments will be printed on the custom age analysis.
 
+After making all relevant details against the transactions, you can generate a document showing the actions for the collection note. From the collection note, click on 'Print Collection Note':
+
+![alt text](image-2.png)
+
+A report will be generated.
+
 ## Print Age Analysis
 From the Collection Dashboard, click on 'Age Analysis':
 
